@@ -1,3 +1,6 @@
+Fonts Credits:
+Fonts courtesy of Sébastien Hayez and some contributions by Jérémy Landes of Velvetyne Type Foundry.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
