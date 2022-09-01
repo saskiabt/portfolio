@@ -12,6 +12,7 @@ body {
 .navButton:hover {
   transform: scale(0.9);
   transition: ease-in-out 0.2s;
+  border-bottom: 0.3px solid black;
 }
 
 .about-section {
@@ -59,4 +60,7 @@ p {
   to {
     transform: transform(359deg);
   }
+}
+#root > div > div.project-section > div:nth-child(5) {
+  margin-bottom: 5%;
 }/*# sourceMappingURL=styles.css.map */

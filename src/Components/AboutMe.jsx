@@ -3,14 +3,14 @@ import React from "react";
 function AboutMe() {
   const greeting = {
     fontSize: "2.5em",
-    color: "black",
+    color: "blue",
   };
   return (
     <div className="about-section">
       <h1 className="font-face-gm" id="greeting" style={greeting}>
-        <span className="rotate">✿ </span>
+        {/* <span className="rotate">✿ </span> */}
         Hi, I&apos;m Saskia Binder{"   "}
-        <span className="rotate">✿</span>
+        {/* <span className="rotate">✿</span> */}
       </h1>
       <p>
         I&apos;m a web developer based in Brooklyn, NY. I am proficient in

@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/prop-types */
 import React from "react";
 
-function Card({ src, name, text }) {
+function Card({ src, name, text, link }) {
   const cardStyle = {
     maxWidth: "50vmin",
     border: "1px solid black",
@@ -10,6 +12,7 @@ function Card({ src, name, text }) {
   const gifStyle = {
     width: "100%",
     display: "flex",
+    cursor: "pointer",
   };
 
   const nameStyle = {
@@ -23,9 +26,15 @@ function Card({ src, name, text }) {
     padding: "10px",
   };
 
+  const handleClick = () => {
+    window.open(link, "blank");
+  };
+
   return (
     <div className="card" style={cardStyle}>
-      <img src={src} className="gifs" alt="card gif" style={gifStyle} />
+      <div onClick={() => handleClick(link)}>
+        <img src={src} className="gifs" alt="card gif" style={gifStyle} />
+      </div>
       <div className="card-name" style={nameStyle}>
         {name}
       </div>

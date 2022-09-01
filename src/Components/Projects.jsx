@@ -23,12 +23,14 @@ function Projects() {
         src={weatherGif}
         name="React Weather App"
         text="Weather App built in React using data from the OpenWeather API."
+        link="https://saskiabt.github.io/react-weather-app2/"
       />
       <Card
         className="gordos"
         src={gordosGif}
         name="Mock Restaurant Website"
         text="Restaurant website written in JS using personalized webpack config and ES6 Modules. Responsive design and mobile friendly."
+        link="https://saskiabt.github.io/restaurant-website/"
       />
       <Card
         className="calc "
@@ -36,6 +38,7 @@ function Projects() {
         name="Javascript Calculator"
         text="Keyboard compatible and draggable calculator, with add, subtract, multiply, divide, exponentiation, and square root functionality. 
         Can perform multiple successive operations on sequential presses of 'enter' or the equals button. Also features delete and clear display buttons."
+        link="https://saskiabt.github.io/calculator/"
       />
       <Card
         className="ttt"
@@ -43,6 +46,7 @@ function Projects() {
         name="Tic Tac Toe"
         text="Javascript game of tic-tac-toe in-browser. 
         Built using modules and factory functions. Option to play against another person, or against the computer. Responsive design and mobile-friendly."
+        link="https://saskiabt.github.io/tic-tac-toe/"
       />
     </div>
   );
