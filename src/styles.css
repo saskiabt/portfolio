@@ -4,10 +4,13 @@
 
 body {
   margin: 0;
+  font-family: roboto-mono, monospace;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .navButton:hover {
-  transform: scale(1.05);
+  transform: scale(0.9);
   transition: ease-in-out 0.2s;
 }
 
@@ -23,4 +26,36 @@ body {
 }
 .font-face-gm {
   font-family: "Victorianna";
+  font-size: 2em;
+}
+
+p {
+  font-family: roboto-mono, monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.rotate {
+  -webkit-animation: rotating 3s infinite linear;
+          animation: rotating 3s infinite linear;
+  color: red;
+  font-size: larger;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: transform(359deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: transform(359deg);
+  }
 }/*# sourceMappingURL=styles.css.map */

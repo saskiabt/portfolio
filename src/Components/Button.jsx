@@ -6,7 +6,10 @@ function Button(props) {
   const buttonStyle = {
     background: "none",
     border: 0,
-    fontSize: "20px",
+    fontSize: "24px",
+    fontFamily: "roboto-mono,monospace",
+    fontWeight: 200,
+    fontStyle: "normal",
   };
 
   return (

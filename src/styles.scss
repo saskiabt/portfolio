@@ -1,14 +1,19 @@
+$lightpink: #fd707021;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: roboto-mono, monospace;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .navButton {
   &:hover {
-    transform: scale(1.05);
+    transform: scale(0.9);
     transition: ease-in-out 0.2s;
   }
 }
@@ -28,4 +33,26 @@ body {
 
 .font-face-gm {
   font-family: "Victorianna";
+  font-size: 2em;
+}
+
+p {
+  font-family: roboto-mono, monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.rotate {
+  animation: rotating 3s infinite linear;
+  color: red;
+  font-size: larger;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: transform(359deg);
+  }
 }
