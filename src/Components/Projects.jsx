@@ -7,7 +7,7 @@ import calcGif from "../gifs/calc.gif";
 import gordosGif from "../gifs/gordos.gif";
 import tttGif from "../gifs/ttt.gif";
 
-function Projects() {
+function Projects({ projectSection }) {
   const sectionStyles = {
     display: "flex",
     flexDirection: "column",
@@ -16,14 +16,15 @@ function Projects() {
   };
 
   return (
-    <div className="project-section" style={sectionStyles}>
+    <div className="project-section" style={sectionStyles} ref={projectSection}>
       <h2 className="font-face-gm">Projects</h2>
       <Card
         className="weather"
         src={weatherGif}
         name="React Weather App"
-        text="Weather App built in React using data from the OpenWeather API."
+        text="Weather App built in React using data from the OpenWeather GeolocationAPI."
         link="https://saskiabt.github.io/react-weather-app2/"
+        repo="https://github.com/saskiabt/react-weather-app2"
       />
       <Card
         className="gordos"

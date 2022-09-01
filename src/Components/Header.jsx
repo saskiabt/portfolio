@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Button from "./Button";
+import scrollDown from "./scrollDown";
 
-function Header() {
+function Header({ aboutSection, projectSection }) {
   const headerStyles = {
     display: "flex",
     flexDirection: "row",
@@ -40,8 +42,8 @@ function Header() {
         SB
       </div>
       <div className="button-wrapper" style={wrapperStyles}>
-        <Button text="About" />
-        <Button text="Projects" />
+        <Button text="About" onclick={() => scrollDown(aboutSection)} />
+        <Button text="Projects" onclick={() => scrollDown(projectSection)} />
         <Button text="Art" />
       </div>
     </div>

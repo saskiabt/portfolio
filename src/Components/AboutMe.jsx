@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
-function AboutMe() {
+function AboutMe({ aboutSection }) {
   const greeting = {
     fontSize: "2.5em",
     color: "blue",
@@ -10,7 +11,7 @@ function AboutMe() {
     padding: "1em",
   };
   return (
-    <div className="about-section" style={sectionPadding}>
+    <div className="about-section" style={sectionPadding} ref={aboutSection}>
       <h1 className="font-face-gm" id="greeting" style={greeting}>
         {/* <span className="rotate">✿ </span> */}
         Hi, I&apos;m Saskia Binder{"   "}
