@@ -6,11 +6,15 @@ function Header() {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "flex-end",
     width: "100vw",
     paddingLeft: "2%",
     paddingRight: "2%",
     fontSize: "1.5em",
+    borderBottom: "1px solid black",
+    position: "sticky",
+    top: 0,
+    backgroundColor: "white",
   };
 
   const nameStyles = {
@@ -27,6 +31,7 @@ function Header() {
     flexDirection: "row",
     alignItems: "flex-end",
     paddingBottom: "1px",
+    gap: "1em",
   };
 
   return (
@@ -35,7 +40,7 @@ function Header() {
         SB
       </div>
       <div className="button-wrapper" style={wrapperStyles}>
-        <Button text="About Me" />
+        <Button text="About" />
         <Button text="Projects" />
         <Button text="Art" />
       </div>

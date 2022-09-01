@@ -5,8 +5,12 @@ function AboutMe() {
     fontSize: "2.5em",
     color: "blue",
   };
+
+  const sectionPadding = {
+    padding: "1em",
+  };
   return (
-    <div className="about-section">
+    <div className="about-section" style={sectionPadding}>
       <h1 className="font-face-gm" id="greeting" style={greeting}>
         {/* <span className="rotate">✿ </span> */}
         Hi, I&apos;m Saskia Binder{"   "}
