@@ -32,6 +32,7 @@ function Projects({ projectSection }) {
         name="Mock Restaurant Website"
         text="Restaurant website written in JS using personalized webpack config and ES6 Modules. Responsive design and mobile friendly."
         link="https://saskiabt.github.io/restaurant-website/"
+        repo="https://github.com/saskiabt/restaurant-website"
       />
       <Card
         className="calc "
@@ -40,6 +41,7 @@ function Projects({ projectSection }) {
         text="Keyboard compatible and draggable calculator, with add, subtract, multiply, divide, exponentiation, and square root functionality. 
         Can perform multiple successive operations on sequential presses of 'enter' or the equals button. Also features delete and clear display buttons."
         link="https://saskiabt.github.io/calculator/"
+        repo="https://github.com/saskiabt/calculator"
       />
       <Card
         className="ttt"
@@ -48,6 +50,7 @@ function Projects({ projectSection }) {
         text="Javascript game of tic-tac-toe in-browser. 
         Built using modules and factory functions. Option to play against another person, or against the computer. Responsive design and mobile-friendly."
         link="https://saskiabt.github.io/tic-tac-toe/"
+        repo="https://github.com/saskiabt/tic-tac-toe"
       />
     </div>
   );

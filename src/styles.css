@@ -63,4 +63,14 @@ p {
 }
 #root > div > div.project-section > div:nth-child(5) {
   margin-bottom: 5%;
+}
+
+.card-button {
+  transition: ease-in-out 0.2s;
+  background-color: "aliceblue";
+}
+.card-button:hover {
+  background: none;
+  background-color: white;
+  font-size: medium;
 }/*# sourceMappingURL=styles.css.map */

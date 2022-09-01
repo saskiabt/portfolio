@@ -1,8 +1,13 @@
+// const scrollDown = (ref) => {
+//   window.scrollTo({
+//     top: ref.current.offsetTop,
+//     behavior: "smooth",
+//   });
+// };
+
 const scrollDown = (ref) => {
-  window.scrollTo({
-    top: ref.current.offsetTop,
-    behavior: "smooth",
-  });
+  //   ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  console.log(ref);
 };
 
 export default scrollDown;

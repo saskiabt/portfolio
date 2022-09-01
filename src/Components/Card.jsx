@@ -64,6 +64,7 @@ function Card({ src, name, text, link, repo }) {
           type="button"
           style={buttonStyle}
           onClick={() => openLink(link)}
+          className="card-button"
         >
           Live Site
         </button>
@@ -71,6 +72,7 @@ function Card({ src, name, text, link, repo }) {
           type="button"
           style={buttonStyle}
           onClick={() => openLink(repo)}
+          className="card-button"
         >
           Github Repo
         </button>

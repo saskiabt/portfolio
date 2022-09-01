@@ -42,8 +42,8 @@ function Header({ aboutSection, projectSection }) {
         SB
       </div>
       <div className="button-wrapper" style={wrapperStyles}>
-        <Button text="About" onclick={() => scrollDown(aboutSection)} />
-        <Button text="Projects" onclick={() => scrollDown(projectSection)} />
+        <Button text="About" onclick={scrollDown(aboutSection)} />
+        <Button text="Projects" onclick={scrollDown(projectSection)} />
         {/* <Button text="Art" /> */}
       </div>
     </div>
