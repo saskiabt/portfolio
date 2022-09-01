@@ -22,7 +22,7 @@ function Projects({ projectSection }) {
         className="weather"
         src={weatherGif}
         name="React Weather App"
-        text="Weather App built in React using data from the OpenWeather GeolocationAPI."
+        text="Weather App built in React using data from the OpenWeather Geolocation API."
         link="https://saskiabt.github.io/react-weather-app2/"
         repo="https://github.com/saskiabt/react-weather-app2"
       />
