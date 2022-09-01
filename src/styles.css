@@ -68,9 +68,22 @@ p {
 .card-button {
   transition: ease-in-out 0.2s;
   background-color: "aliceblue";
+  border: 1px 1px 0px solid black;
+  font-family: roboto-mono, monospace;
+  font-weight: 200;
+  font-style: normal;
+  padding: 5px;
+  width: 75%;
+  cursor: pointer;
+  border-width: 0.1px;
+  background: aliceblue;
+  border-radius: 50%;
+  background: none;
 }
 .card-button:hover {
-  background: none;
-  background-color: white;
+  background: aliceblue;
   font-size: medium;
+  border: 5px solid transparent;
+  -o-border-image: url("./img/circle.png");
+     border-image: url("./img/circle.png");
 }/*# sourceMappingURL=styles.css.map */

@@ -36,18 +36,6 @@ function Card({ src, name, text, link, repo }) {
     gap: ".5em",
   };
 
-  const buttonStyle = {
-    border: "1px 1px 0px solid black",
-    fontFamily: "roboto-mono, monospace",
-    fontWeight: "200",
-    fontStyle: "normal",
-    padding: "5px",
-    width: "75%",
-    cursor: "pointer",
-    borderWidth: "0.1px",
-    background: "aliceblue",
-  };
-
   return (
     <div className="card" style={cardStyle}>
       <div onClick={() => openLink(link)}>
@@ -62,7 +50,6 @@ function Card({ src, name, text, link, repo }) {
       <div className="button-container" style={buttonContainerStyles}>
         <button
           type="button"
-          style={buttonStyle}
           onClick={() => openLink(link)}
           className="card-button"
         >
@@ -70,7 +57,6 @@ function Card({ src, name, text, link, repo }) {
         </button>
         <button
           type="button"
-          style={buttonStyle}
           onClick={() => openLink(repo)}
           className="card-button"
         >
