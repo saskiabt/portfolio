@@ -28,7 +28,7 @@ function Projects() {
         className="gordos"
         src={gordosGif}
         name="Mock Restaurant Website"
-        text="Restaurant website written in JS using personalized webpack config and ES6 Modules."
+        text="Restaurant website written in JS using personalized webpack config and ES6 Modules. Responsive design and mobile friendly."
       />
       <Card
         className="calc "

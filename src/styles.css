@@ -17,7 +17,7 @@ body {
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 0 10vw;
+  margin: 0 15vw;
 }
 
 @font-face {
@@ -27,6 +27,7 @@ body {
 .font-face-gm {
   font-family: "Victorianna";
   font-size: 2em;
+  color: blue;
 }
 
 p {
@@ -38,7 +39,7 @@ p {
 .rotate {
   -webkit-animation: rotating 3s infinite linear;
           animation: rotating 3s infinite linear;
-  color: red;
+  color: blue;
   font-size: larger;
 }
 

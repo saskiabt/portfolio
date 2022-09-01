@@ -16,6 +16,11 @@ function Card({ src, name, text }) {
     fontFamily: "roboto-mono,monospace",
     fontWeight: 400,
     fontStyle: "normal",
+    paddingTop: "10px",
+  };
+
+  const cardTextStyle = {
+    padding: "10px",
   };
 
   return (
@@ -24,7 +29,9 @@ function Card({ src, name, text }) {
       <div className="card-name" style={nameStyle}>
         {name}
       </div>
-      <p>{text}</p>
+      <p className="card-text" style={cardTextStyle}>
+        {text}
+      </p>
     </div>
   );
 }

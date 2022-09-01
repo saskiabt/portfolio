@@ -10,6 +10,7 @@ function Header() {
     width: "100vw",
     paddingLeft: "2%",
     paddingRight: "2%",
+    fontSize: "1.5em",
   };
 
   const nameStyles = {

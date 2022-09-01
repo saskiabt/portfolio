@@ -1,10 +1,15 @@
 import React from "react";
 
 function AboutMe() {
+  const greeting = {
+    fontSize: "2.5em",
+    color: "black",
+  };
   return (
     <div className="about-section">
-      <h1 className="font-face-gm">
-        <span className="rotate">✿</span> Hi, I&apos;m Saskia Binder{" "}
+      <h1 className="font-face-gm" id="greeting" style={greeting}>
+        <span className="rotate">✿ </span>
+        Hi, I&apos;m Saskia Binder{"   "}
         <span className="rotate">✿</span>
       </h1>
       <p>
