@@ -6,17 +6,11 @@ import weatherGif from "../gifs/weather.gif";
 import calcGif from "../gifs/calc.gif";
 import gordosGif from "../gifs/gordos.gif";
 import tttGif from "../gifs/ttt.gif";
+import projectStyles from "../styles/projectStyles";
 
-function Projects({ projectSection }) {
-  const sectionStyles = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: "20px",
-  };
-
+const Projects = React.forwardRef((props, ref) => {
   return (
-    <div className="project-section" style={sectionStyles} ref={projectSection}>
+    <div className="project-section" style={projectStyles} ref={ref}>
       <h2 className="font-face-gm">Projects</h2>
       <Card
         className="weather"
@@ -35,7 +29,7 @@ function Projects({ projectSection }) {
         repo="https://github.com/saskiabt/restaurant-website"
       />
       <Card
-        className="calc "
+        className="calc"
         src={calcGif}
         name="Javascript Calculator"
         text="Keyboard compatible and draggable calculator, with add, subtract, multiply, divide, exponentiation, and square root functionality. 
@@ -54,6 +48,6 @@ function Projects({ projectSection }) {
       />
     </div>
   );
-}
+});
 
 export default Projects;

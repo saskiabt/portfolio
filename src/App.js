@@ -6,14 +6,32 @@ import Header from "./Components/Header";
 import Projects from "./Components/Projects";
 
 function App() {
-  const aboutSection = useRef();
-  const projectsSection = useRef();
+  const projectsSectionRef = useRef(null);
+  const aboutSectionRef = useRef(null);
+
+  const scrollToProjects = () => {
+    projectsSectionRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "center",
+    });
+  };
+
+  const scrollToAbout = () => {
+    aboutSectionRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
 
   return (
     <div className="App">
-      <Header aboutSection={aboutSection} projectSection={projectsSection} />
-      <AboutMe aboutSection={aboutSection} />
-      <Projects projectSection={projectsSection} />
+      <Header
+        scrollToProjects={scrollToProjects}
+        scrollToAbout={scrollToAbout}
+      />
+      <AboutMe ref={aboutSectionRef} />
+      <Projects ref={projectsSectionRef} />
     </div>
   );
 }

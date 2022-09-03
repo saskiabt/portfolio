@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-function AboutMe({ aboutSection }) {
+const AboutMe = React.forwardRef((props, ref) => {
   const greeting = {
     fontSize: "2.5em",
     color: "blue",
@@ -11,7 +11,7 @@ function AboutMe({ aboutSection }) {
     padding: "1em",
   };
   return (
-    <div className="about-section" style={sectionPadding} ref={aboutSection}>
+    <div className="about-section" style={sectionPadding} ref={ref}>
       <h1 className="font-face-gm" id="greeting" style={greeting}>
         {/* <span className="rotate">✿ </span> */}
         Hi, I&apos;m Saskia Binder{"   "}
@@ -34,6 +34,6 @@ function AboutMe({ aboutSection }) {
       </p> */}
     </div>
   );
-}
+});
 
 export default AboutMe;
