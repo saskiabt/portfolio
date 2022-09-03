@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header aboutSection={aboutSection} projectSection={projectsSection} />
       <AboutMe aboutSection={aboutSection} />
-      <Projects projectsSection={projectsSection} />
+      <Projects projectSection={projectsSection} />
     </div>
   );
 }

@@ -5,9 +5,9 @@
 //   });
 // };
 
-const scrollDown = (ref) => {
-  //   ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  console.log(ref);
+const scrollDown = (scrollDiv) => {
+  if (!scrollDiv.current) return;
+  scrollDiv.current.scrollIntoView({ behavior: "smooth" });
 };
 
 export default scrollDown;
