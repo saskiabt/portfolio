@@ -21,6 +21,7 @@ function Card({ src, name, text, link, repo }) {
     fontWeight: 400,
     fontStyle: "normal",
     paddingTop: "10px",
+    fontSize: "larger",
   };
 
   const cardTextStyle = {
