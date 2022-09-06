@@ -8,7 +8,7 @@ function Card({ src, name, text, link, repo }) {
   const cardStyle = {
     maxWidth: "60vmin",
     border: "1px solid black",
-    borderRadius: "35px",
+    // borderRadius: "35px",
   };
 
   const gifStyle = {
