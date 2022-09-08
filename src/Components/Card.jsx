@@ -15,7 +15,7 @@ function Card({ src, name, text, link, repo }) {
     width: "100%",
     display: "flex",
     cursor: "pointer",
-    borderRadius: "18px 18px 0px 0px;",
+    // borderRadius: "18px 18px 0px 0px;",
   };
 
   const nameStyle = {
