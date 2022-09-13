@@ -7,11 +7,20 @@ import calcGif from "../gifs/calc.gif";
 import gordosGif from "../gifs/gordos.gif";
 import tttGif from "../gifs/ttt.gif";
 import projectStyles from "../styles/projectStyles";
+import resumeGif from "../gifs/resume.gif";
 
 const Projects = React.forwardRef((props, ref) => {
   return (
     <div className="project-section" style={projectStyles} ref={ref}>
       <h2 className="font-face-gm">Projects</h2>
+      <Card
+        className="resume"
+        src={resumeGif}
+        name="React Resume Builder"
+        text="React App to create a formatted resume from user inputs, using react Forms, hooks, dynamic and conditional rendering."
+        link="https://saskiabt.github.io/react-resume-app/"
+      />
+
       <Card
         className="weather"
         src={weatherGif}

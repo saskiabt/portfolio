@@ -30,8 +30,10 @@ function App() {
         scrollToProjects={scrollToProjects}
         scrollToAbout={scrollToAbout}
       />
-      <AboutMe ref={aboutSectionRef} />
-      <Projects ref={projectsSectionRef} />
+      <div className="content">
+        <AboutMe ref={aboutSectionRef} />
+        <Projects ref={projectsSectionRef} />
+      </div>
     </div>
   );
 }

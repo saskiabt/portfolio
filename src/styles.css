@@ -18,7 +18,8 @@ body {
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 0 15vw;
+  margin: 0 20vw;
+  align-items: center;
 }
 
 @font-face {
