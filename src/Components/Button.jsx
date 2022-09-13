@@ -11,7 +11,7 @@ function Button(props) {
     borderRight: "1px solid black",
     fontSize: "24px",
     fontFamily: "roboto-mono,monospace",
-    fontWeight: 200,
+    fontWeight: 300,
     fontStyle: "normal",
     padding: "5px",
   };

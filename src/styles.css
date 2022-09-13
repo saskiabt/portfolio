@@ -28,7 +28,7 @@ body {
 }
 .font-face-gm {
   font-family: "Victorianna";
-  font-size: 2em;
+  font-size: 3em;
   color: blue;
   -webkit-margin-after: 0.2em;
           margin-block-end: 0.2em;
@@ -86,4 +86,9 @@ p {
   background: white;
   font-size: medium;
   border: 0.5px solid black;
+}
+
+#greeting {
+  font-size: 4em;
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */

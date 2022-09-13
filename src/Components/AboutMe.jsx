@@ -3,7 +3,6 @@ import React from "react";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const greeting = {
-    fontSize: "2.5em",
     color: "blue",
   };
 
