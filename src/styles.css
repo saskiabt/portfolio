@@ -100,4 +100,13 @@ p {
 
 .italic {
   font-size: smaller;
+}
+
+.card {
+  width: 60vmin;
+}
+@media screen and (max-width: 450px) {
+  .card {
+    width: 75vmin;
+  }
 }/*# sourceMappingURL=styles.css.map */

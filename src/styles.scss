@@ -100,3 +100,11 @@ p {
 .italic {
   font-size: smaller;
 }
+
+.card {
+  width: 60vmin;
+
+  @media screen and (max-width: 450px) {
+    width: 75vmin;
+  }
+}

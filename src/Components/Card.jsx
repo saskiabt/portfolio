@@ -6,7 +6,6 @@ import openLink from "./openLink";
 
 function Card({ src, name, text, link, repo }) {
   const cardStyle = {
-    maxWidth: "60vmin",
     border: "1px solid black",
     // borderRadius: "35px",
   };
