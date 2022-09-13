@@ -26,7 +26,7 @@ const AboutMe = React.forwardRef((props, ref) => {
         I&apos;m also a fine art painter and illustrator, and I am experienced
         in Photoshop, Illustrator, and Figma for UI and design.
       </p>
-      <p className="italic">
+      <p>
         This site was built in React. Fonts courtesy of Sébastien Hayez and
         Jérémy Landes of Velvetyne Type Foundry.
       </p>
