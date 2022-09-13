@@ -26,6 +26,10 @@ body {
   margin: 0 20vw;
   align-items: center;
   // max-width: 600px;
+
+  @media screen and (max-width: 450px) {
+    margin: 0 8vw;
+  }
 }
 
 @font-face {
@@ -91,4 +95,8 @@ p {
 #greeting {
   font-size: 4em;
   font-weight: 700;
+}
+
+.italic {
+  font-size: smaller;
 }

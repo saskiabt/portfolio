@@ -21,6 +21,11 @@ body {
   margin: 0 20vw;
   align-items: center;
 }
+@media screen and (max-width: 450px) {
+  .about-section {
+    margin: 0 8vw;
+  }
+}
 
 @font-face {
   font-family: "Victorianna";
@@ -91,4 +96,8 @@ p {
 #greeting {
   font-size: 4em;
   font-weight: 700;
+}
+
+.italic {
+  font-size: smaller;
 }/*# sourceMappingURL=styles.css.map */

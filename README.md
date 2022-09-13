@@ -1,5 +1,5 @@
 Fonts Credits:
-Fonts courtesy of Sébastien Hayez and some contributions by Jérémy Landes of Velvetyne Type Foundry.
+Fonts courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type Foundry.
 
 Specs:
 
