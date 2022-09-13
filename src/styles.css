@@ -64,7 +64,7 @@ p {
     transform: transform(359deg);
   }
 }
-#root > div > div.project-section > div:nth-child(5) {
+#root > div > div.content > div.project-section > div:nth-child(6) {
   margin-bottom: 5%;
 }
 
