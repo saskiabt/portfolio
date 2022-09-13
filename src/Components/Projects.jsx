@@ -19,6 +19,7 @@ const Projects = React.forwardRef((props, ref) => {
         name="React Resume Builder"
         text="React App to create a formatted resume from user inputs, using react Forms, hooks, dynamic and conditional rendering."
         link="https://saskiabt.github.io/react-resume-app/"
+        repo="https://github.com/saskiabt/react-resume-app"
       />
 
       <Card
