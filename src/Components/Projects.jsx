@@ -19,7 +19,7 @@ const Projects = React.forwardRef((props, ref) => {
         src={mmbGif}
         name="Full Stack Message Board"
         text="Full Stack message board app featuring REST API Backend built with Node, Express, MongoDB and Mongoose. Frontend built in React with Redux and Redux Toolkit. Features backend authentication (login credentials) using JSON Web Tokens and Bcrypt. Frontend Authentication using Redux Toolkit and the Async Thunk API. Frontend routing with React-Router-Dom. Users can create an account or login to leave a comment, and see a protected dashboard with their own comments."
-        link="https://mmb-saskiabt.herokuapp.com/dashboard"
+        link="https://mmb-saskiabt.herokuapp.com/"
         repo="https://github.com/saskiabt/mmb"
       />
       <Card
