@@ -73,6 +73,7 @@ p {
 
 .card-button {
   transition: ease-in-out 0.2s;
+  color: black;
   background: "aliceblue";
   border: none;
   font-family: roboto-mono, monospace;
@@ -84,6 +85,7 @@ p {
   border-width: 0.1px;
   background: aliceblue;
   border-radius: 50%;
+  font-size: 1.4em;
 
   &:hover {
     background: white;

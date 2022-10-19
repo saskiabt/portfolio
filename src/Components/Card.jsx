@@ -3,6 +3,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import openLink from "./openLink";
+import "../styles/card.css";
 
 function Card({ src, name, text, link, repo }) {
   const cardStyle = {
