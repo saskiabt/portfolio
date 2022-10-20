@@ -11,6 +11,7 @@ const headerStyles = {
   position: "sticky",
   top: 0,
   backgroundColor: "white",
+  gap: "10px",
 };
 
 export default headerStyles;
