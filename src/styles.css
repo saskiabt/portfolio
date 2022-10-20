@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   margin: 0 20vw;
   align-items: center;
-  scroll-margin-top: 10px;
+  scroll-margin-top: 60px;
 }
 @media screen and (max-width: 450px) {
   .about-section {
