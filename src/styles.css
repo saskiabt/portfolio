@@ -108,6 +108,9 @@ p {
   }
 }
 
+#name {
+  margin-right: 10px;
+}
 @media screen and (max-width: 450px) {
   #name {
     font-size: 2em;
