@@ -14,6 +14,7 @@ function App() {
       behavior: "smooth",
       block: "start",
       inline: "center",
+      top: "10px",
     });
   };
 
