@@ -103,3 +103,10 @@ p {
     width: 75vmin;
   }
 }
+
+#name {
+  @media screen and (max-width: 450px) {
+    font-size: 2em;
+    margin-right: 10px;
+  }
+}
