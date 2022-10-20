@@ -1,0 +1,17 @@
+.navButton {
+  background: none;
+  border: 0;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 28px;
+  font-family: "roboto-mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  padding: 5px;
+  cursor: pointer;
+}
+.navButton:hover {
+  transform: translateY(2.4px);
+  transition: ease-in-out 0.2s;
+}/*# sourceMappingURL=nav.css.map */
