@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Button from "./Button";
 import headerStyles from "../styles/headerStyles";
 import nameStyles from "../styles/nameStyles";
@@ -9,8 +9,8 @@ import wrapperStyles from "../styles/wrapperStyles";
 import "../styles/nav/nav.css";
 
 function Header({ scrollToAbout, scrollToProjects }) {
-  const goToLinkedin = () => {
-    window.open("https://www.linkedin.com/in/saskia-binder/", "_blank");
+  const goToLink = (URL) => {
+    window.open(URL, "_blank");
   };
   return (
     <div className="header" style={headerStyles}>
@@ -20,8 +20,19 @@ function Header({ scrollToAbout, scrollToProjects }) {
       <div className="button-wrapper" style={wrapperStyles}>
         <Button text="About" onClick={scrollToAbout} />
         <Button text="Projects" onClick={scrollToProjects} />
-        <button type="button" className="navButton" onClick={goToLinkedin}>
+        <button
+          type="button"
+          className="navButton"
+          onClick={() => goToLink("https://www.linkedin.com/in/saskia-binder/")}
+        >
           <FontAwesomeIcon icon={faLinkedin} />
+        </button>
+        <button
+          type="button"
+          className="navButton"
+          onClick={() => goToLink("https://github.com/saskiabt")}
+        >
+          <FontAwesomeIcon icon={faGithub} />
         </button>
         {/* <Button text="Art" /> */}
       </div>
