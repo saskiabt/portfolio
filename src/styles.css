@@ -34,6 +34,15 @@ body {
           margin-block-end: 0.2em;
 }
 
+.home-button {
+  font-family: "Victorianna";
+  font-size: 1em;
+  background-color: white;
+  border: 0px;
+  color: blue;
+  cursor: pointer;
+}
+
 p {
   font-family: roboto-mono, monospace;
   font-weight: 200;

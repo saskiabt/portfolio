@@ -15,7 +15,9 @@ function Header({ scrollToAbout, scrollToProjects }) {
   return (
     <div className="header" style={headerStyles}>
       <div id="name" className="font-face-gm" style={nameStyles}>
-        SB
+        <button className="home-button" type="button" onClick={scrollToAbout}>
+          SB
+        </button>
       </div>
       <div className="button-wrapper" style={wrapperStyles}>
         <Button text="About" onClick={scrollToAbout} />
