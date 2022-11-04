@@ -18,9 +18,10 @@ const AboutMe = React.forwardRef((props, ref) => {
       </h1>
       <p>
         I&apos;m a full stack web developer based in Brooklyn, NY. I am
-        proficient in React, Redux, JavaScript, NodeJS, CSS/SCSS, HTML, and Git,
-        and I enjoy building engaging, responsive websites and applications that
-        reflect my interests in art and design.
+        proficient in React, Redux, JavaScript, NodeJS, CSS/SCSS, HTML, Express,
+        MongoDB, Git, and Adobe Creative Suite. I enjoy building engaging,
+        responsive websites and applications that reflect my interests in art
+        and design.
       </p>
       <p>
         I&apos;m also a fine art painter and illustrator, and I am experienced
