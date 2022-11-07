@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import { React, useRef } from "react";
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
-import Projects from "./Components/Projects";
 
 function App() {
   const projectsSectionRef = useRef(null);
@@ -31,10 +30,7 @@ function App() {
         scrollToProjects={scrollToProjects}
         scrollToAbout={scrollToAbout}
       />
-      <div className="content">
-        <AboutMe ref={aboutSectionRef} />
-        <Projects ref={projectsSectionRef} />
-      </div>
+      <Outlet context={{ projectsSectionRef, aboutSectionRef }} />
     </div>
   );
 }

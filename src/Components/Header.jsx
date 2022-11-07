@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Button from "./Button";
@@ -9,9 +10,29 @@ import wrapperStyles from "../styles/wrapperStyles";
 import "../styles/nav/nav.css";
 
 function Header({ scrollToAbout, scrollToProjects }) {
+  const location = useLocation();
+  const navigate = useNavigate();
   const goToLink = (URL) => {
     window.open(URL, "_blank");
   };
+
+  const handleAboutClick = () => {
+    // eslint-disable-next-line no-unused-expressions
+    if (location.pathname === "/art") {
+      navigate("/");
+    } else {
+      scrollToAbout();
+    }
+  };
+
+  const handleProjectsClick = () => {
+    if (location.pathname === "/art") {
+      navigate("/");
+    } else {
+      scrollToProjects();
+    }
+  };
+
   return (
     <div className="header" style={headerStyles}>
       <div id="name" className="font-face-gm" style={nameStyles}>
@@ -20,8 +41,8 @@ function Header({ scrollToAbout, scrollToProjects }) {
         </button>
       </div>
       <div className="button-wrapper" style={wrapperStyles}>
-        <Button text="About" onClick={scrollToAbout} />
-        <Button text="Projects" onClick={scrollToProjects} />
+        <Button text="About" onClick={handleAboutClick} />
+        <Button text="Projects" onClick={handleProjectsClick} />
         <button
           type="button"
           className="navButton"
@@ -36,7 +57,12 @@ function Header({ scrollToAbout, scrollToProjects }) {
         >
           <FontAwesomeIcon icon={faGithub} />
         </button>
-        {/* <Button text="Art" /> */}
+        <Button
+          text="Art"
+          onClick={() => {
+            navigate("/art");
+          }}
+        />
       </div>
     </div>
   );
