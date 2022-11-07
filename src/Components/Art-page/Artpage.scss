@@ -1,0 +1,38 @@
+.ArtPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .card {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    border: 1px solid purple;
+  }
+
+  .card-img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .img-button {
+    width: 12%;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+}
