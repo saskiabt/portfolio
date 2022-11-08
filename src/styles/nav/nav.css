@@ -43,6 +43,7 @@
 @media only screen and (max-width: 450px) {
   .header {
     gap: 0px;
+    color: black;
   }
   .header .button-wrapper {
     gap: 0.7em;
