@@ -6,8 +6,7 @@
   height: -moz-fit-content;
   height: fit-content;
 }
-
-.button-container {
+.ArtCard .button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;

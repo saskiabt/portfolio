@@ -40,7 +40,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
         <Button text="About" onClick={handleAboutClick} />
         <Button text="Projects" onClick={handleProjectsClick} />
         <Button
-          text="Art"
+          text="Artwork"
           onClick={() => {
             navigate("/art");
           }}
