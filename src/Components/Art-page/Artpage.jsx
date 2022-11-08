@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ArtCard from "../ArtCard/ArtCard.tsx";
+import ArtCard from "../ArtCard/ArtCard";
 import "./Artpage.css";
 import flowers2 from "../../img/artpage/flowers2.jpg";
 // import flowers2ZO from "../../img/artpage/flowers2-zoomout.png";
