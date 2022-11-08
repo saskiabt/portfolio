@@ -15,7 +15,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
 
   const handleAboutClick = () => {
     // eslint-disable-next-line no-unused-expressions
-    if (location.pathname === "/art") {
+    if (location.pathname === "/portfolio/art") {
       navigate("/portfolio");
     } else {
       scrollToAbout();
@@ -23,7 +23,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
   };
 
   const handleProjectsClick = () => {
-    if (location.pathname === "/art") {
+    if (location.pathname === "/portfolio/art") {
       navigate("/portfolio");
     } else {
       scrollToProjects();
@@ -42,7 +42,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
         <Button
           text="Artwork"
           onClick={() => {
-            navigate("/art");
+            navigate("/portfolio/art");
           }}
         />
         <button
