@@ -12,6 +12,7 @@ import binta from "../../img/artpage/binta.jpeg";
 import magenta from "../../img/artpage/magenta.jpeg";
 import orange from "../../img/artpage/orange.png";
 import blueKimono from "../../img/artpage/blueKimono.jpg";
+import colorBlock from "../../img/artpage/colorblock.png";
 
 function Artpage() {
   const [source, setSource] = useState({
@@ -25,6 +26,7 @@ function Artpage() {
     magenta,
     orange,
     blueKimono,
+    colorBlock,
   });
 
   return (
@@ -38,14 +40,15 @@ function Artpage() {
         <ArtCard source={source.ianLG} />
         <ArtCard source={source.yellowRainCoat} />
         <ArtCard source={source.talia} />
-        <ArtCard source={source.blueKimono} />
+        <ArtCard source={source.colorBlock} />
+        <ArtCard source={source.orange} />
       </div>
       <div className="lr">
         <ArtCard source={source.flowers} />
         <ArtCard source={source.binta} />
         <ArtCard source={source.fernando} />
         <ArtCard source={source.magenta} />
-        <ArtCard source={source.orange} />
+        <ArtCard source={source.blueKimono} />
       </div>
 
       {/* <ArtCard source={source.fernando} /> */}

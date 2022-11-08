@@ -4,9 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Button from "./Button";
-import headerStyles from "../styles/headerStyles";
 import nameStyles from "../styles/nameStyles";
-import wrapperStyles from "../styles/wrapperStyles";
 import "../styles/nav/nav.css";
 
 function Header({ scrollToAbout, scrollToProjects }) {
@@ -34,7 +32,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
   };
 
   return (
-    <div className="header" style={headerStyles}>
+    <div className="header">
       <div id="name" className="font-face-gm" style={nameStyles}>
         <button
           className="home-button"
@@ -44,7 +42,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
           SB
         </button>
       </div>
-      <div className="button-wrapper" style={wrapperStyles}>
+      <div className="button-wrapper">
         <Button text="About" onClick={handleAboutClick} />
         <Button text="Projects" onClick={handleProjectsClick} />
         <Button

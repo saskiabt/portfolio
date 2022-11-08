@@ -1,22 +1,50 @@
-.navButton {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100vw;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  gap: 10px;
+}
+.header .button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 1px;
+  gap: 1em;
+}
+
+.button-wrapper .navButton {
   background: none;
   border: 0;
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  font-size: 28px;
+  font-size: 3vmin;
   font-family: "roboto-mono", monospace;
   font-weight: 300;
   font-style: normal;
   padding: 5px;
   cursor: pointer;
 }
-.navButton:hover {
+.button-wrapper .navButton:hover {
   transform: translateY(2.4px);
   transition: ease-in-out 0.2s;
 }
-@media only screen and (max-width: 600px) {
-  .navButton .navButton {
-    font-size: 0.6rem;
+
+@media only screen and (max-width: 450px) {
+  .header {
+    gap: 0px;
+  }
+  .header .button-wrapper {
+    gap: 0.7em;
   }
 }/*# sourceMappingURL=nav.css.map */
