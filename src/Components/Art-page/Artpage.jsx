@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ArtCard from "../ArtCard/ArtCard";
 import "./Artpage.css";
 import flowers2 from "../../img/artpage/flowers2.jpg";
-// import flowers2ZO from "../../img/artpage/flowers2-zoomout.png";
+import flowers2ZO from "../../img/artpage/flowers2-zoomout.png";
 import flowers from "../../img/artpage/flowers1.png";
 import ianLG from "../../img/artpage/ian-lg.jpg";
 import yellowRainCoat from "../../img/artpage/yellowraincoat.png";
@@ -10,7 +10,7 @@ import talia from "../../img/artpage/talia.png";
 import fernando from "../../img/artpage/fernando.jpg";
 import binta from "../../img/artpage/binta.jpeg";
 import magenta from "../../img/artpage/magenta.jpeg";
-import orange from "../../img/artpage/orange.png";
+import orange from "../../img/artpage/orange2.png";
 import blueKimono from "../../img/artpage/blueKimono.jpg";
 import colorBlock from "../../img/artpage/colorblock.png";
 
@@ -36,6 +36,7 @@ function Artpage() {
           source={source.flowers2}
           setSource={setSource}
           multipleImages
+          buttons={[flowers2, flowers2ZO]}
         />
         <ArtCard source={source.ianLG} />
         <ArtCard source={source.yellowRainCoat} />
