@@ -1,6 +1,6 @@
 .ArtPage {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   flex-direction: row;
   margin-top: 5%;
   padding-left: 7%;
@@ -12,7 +12,7 @@
 .lr {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 }
 
 @media only screen and (max-width: 600px) {

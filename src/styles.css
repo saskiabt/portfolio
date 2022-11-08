@@ -9,6 +9,10 @@ body {
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;

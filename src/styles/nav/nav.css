@@ -6,6 +6,7 @@
   width: 100vw;
   padding-left: 2%;
   padding-right: 2%;
+  padding-top: 2%;
   font-size: 1.5em;
   border-bottom: 1px solid black;
   position: -webkit-sticky;
@@ -48,4 +49,4 @@
   .header .button-wrapper {
     gap: 0.7em;
   }
-}/*# sourceMappingURL=nav.css.map */
+} /*# sourceMappingURL=nav.css.map */

@@ -6,42 +6,56 @@
   height: -moz-fit-content;
   height: fit-content;
 }
-.ArtCard .button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5%;
-  border: 1px solid purple;
-  height: 100%;
-}
 
-.card-img {
+.active-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
+  max-height: 90vh;
+  background-color: white;
 }
 
 .active-image-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   border: 0px;
   padding: 0px;
   cursor: pointer;
+  border-bottom: 1px solid purple;
 }
 
-.img-button {
-  width: 12%;
+.thumbnail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5em 0;
+  gap: 2em;
+}
+.thumbnail-container button {
+  height: 2.5em;
+  width: 2.5em;
   border: 0px;
-  padding: 0px;
+  padding: 2px;
   cursor: pointer;
+  border-radius: 100%;
 }
-.img-button:hover {
-  opacity: 80%;
+.thumbnail-container button:hover {
+  border: 2px solid purple;
 }
-.img-button img {
+.thumbnail-container img {
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,4 +65,7 @@
   .lr {
     width: 80vw;
   }
+}
+.hidden {
+  display: none;
 }/*# sourceMappingURL=ArtCard.css.map */
