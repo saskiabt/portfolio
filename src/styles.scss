@@ -46,6 +46,11 @@ body {
   border: 0px;
   color: blue;
   cursor: pointer;
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.4em;
+    padding-right: 0px;
+  }
 }
 
 p {

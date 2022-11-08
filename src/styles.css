@@ -42,6 +42,12 @@ body {
   color: blue;
   cursor: pointer;
 }
+@media screen and (max-width: 450px) {
+  .home-button {
+    font-size: 1.4em;
+    padding-right: 0px;
+  }
+}
 
 p {
   font-family: roboto-mono, monospace;
