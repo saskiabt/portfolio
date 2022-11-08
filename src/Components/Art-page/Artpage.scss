@@ -1,38 +1,27 @@
 .ArtPage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-direction: column;
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
   margin-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+}
 
-  .card {
-    width: 45vw;
-    display: flex;
+.lr {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .ArtPage {
     flex-direction: column;
+    align-items: center;
   }
 
-  .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-    border: 1px solid purple;
-  }
-
-  .card-img {
-    object-fit: contain;
-    width: 100%;
-  }
-
-  .img-button {
-    width: 12%;
-    border: 0px;
-    padding: 0px;
-    cursor: pointer;
-
-    img {
-      width: 100%;
-    }
+  .lr {
+    width: 80vw;
   }
 }

@@ -36,13 +36,23 @@ function Header({ scrollToAbout, scrollToProjects }) {
   return (
     <div className="header" style={headerStyles}>
       <div id="name" className="font-face-gm" style={nameStyles}>
-        <button className="home-button" type="button" onClick={scrollToAbout}>
+        <button
+          className="home-button"
+          type="button"
+          onClick={handleAboutClick}
+        >
           SB
         </button>
       </div>
       <div className="button-wrapper" style={wrapperStyles}>
         <Button text="About" onClick={handleAboutClick} />
         <Button text="Projects" onClick={handleProjectsClick} />
+        <Button
+          text="Art"
+          onClick={() => {
+            navigate("/art");
+          }}
+        />
         <button
           type="button"
           className="navButton"
@@ -57,12 +67,6 @@ function Header({ scrollToAbout, scrollToProjects }) {
         >
           <FontAwesomeIcon icon={faGithub} />
         </button>
-        <Button
-          text="Art"
-          onClick={() => {
-            navigate("/art");
-          }}
-        />
       </div>
     </div>
   );

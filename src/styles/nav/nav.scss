@@ -19,8 +19,9 @@
     // border-bottom: 0.3px solid black;
   }
 
-  @media screen and (max-width: 450px) {
-    font-size: 16px;
-    color: black;
+  @media only screen and (max-width: 600px) {
+    .navButton {
+      font-size: 0.6rem;
+    }
   }
 }

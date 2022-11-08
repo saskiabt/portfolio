@@ -1,0 +1,55 @@
+.ArtCard {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  border: 1px solid purple;
+  height: 100%;
+}
+
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.active-image-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.img-button {
+  width: 12%;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+.img-button:hover {
+  opacity: 80%;
+}
+.img-button img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .ArtCard {
+    width: 100%;
+  }
+  .lr {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=ArtCard.css.map */

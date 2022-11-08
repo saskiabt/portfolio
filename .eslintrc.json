@@ -26,6 +26,14 @@
         "avoidEscape": true
       }
     ],
-    "no-console": "off"
+    "no-console": "off",
+    "react/require-default-props": [
+      "error",
+      {
+        "forbidDefaultForRequired": true,
+        "functions": "defaultArguments" //Here
+      }
+    ],
+    "react/jsx-filename-extension": "off"
   }
 }
