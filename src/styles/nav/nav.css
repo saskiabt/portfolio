@@ -74,4 +74,7 @@
   .button-wrapper .navButton {
     font-size: 4vmin;
   }
+  .navButton {
+    color: black;
+  }
 }/*# sourceMappingURL=nav.css.map */
