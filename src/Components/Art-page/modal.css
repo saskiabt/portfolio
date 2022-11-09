@@ -34,4 +34,7 @@
   .modal {
     flex-direction: column;
   }
+  .modal button {
+    color: black;
+  }
 }/*# sourceMappingURL=modal.css.map */

@@ -35,5 +35,9 @@
 @media only screen and (max-width: 800px) {
   .modal {
     flex-direction: column;
+
+    button {
+      color: black;
+    }
   }
 }
