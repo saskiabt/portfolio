@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9febe94a.css",
-    "main.js": "/portfolio/static/js/main.b9d8fd36.js",
+    "main.css": "/portfolio/static/css/main.034fcb0e.css",
+    "main.js": "/portfolio/static/js/main.43b1a86d.js",
     "static/js/787.37faa4c4.chunk.js": "/portfolio/static/js/787.37faa4c4.chunk.js",
     "static/media/colorblock.png": "/portfolio/static/media/colorblock.2156193c5d12700857c3.png",
     "static/media/talia.png": "/portfolio/static/media/talia.ed4da027bea2db0dc6b0.png",
     "static/media/fernando.jpg": "/portfolio/static/media/fernando.5c196bee1591a739f614.jpg",
     "static/media/flowers2.jpg": "/portfolio/static/media/flowers2.1ee5b88d609bde9e155b.jpg",
+    "static/media/flowers2-zoomout.png": "/portfolio/static/media/flowers2-zoomout.a7d5a190535173378ea9.png",
+    "static/media/ian-zoom.png": "/portfolio/static/media/ian-zoom.0cccd2bfd26c034ec229.png",
     "static/media/yellowraincoat.png": "/portfolio/static/media/yellowraincoat.c63ec841272774de4c04.png",
+    "static/media/yellowraincoat-2.png": "/portfolio/static/media/yellowraincoat-2.93061ada92980afc0417.png",
     "static/media/binta.jpeg": "/portfolio/static/media/binta.dafbb6e6c5e04a57db87.jpeg",
     "static/media/blueKimono.jpg": "/portfolio/static/media/blueKimono.430756f7826dd25226e1.jpg",
     "static/media/magenta.jpeg": "/portfolio/static/media/magenta.0308ca44050424d94584.jpeg",
@@ -16,18 +19,18 @@
     "static/media/flowers1.png": "/portfolio/static/media/flowers1.4769501b273c257a9964.png",
     "static/media/calc.gif": "/portfolio/static/media/calc.8a9ba132843d1ab3b328.gif",
     "static/media/ian-lg.jpg": "/portfolio/static/media/ian-lg.b6cf1d36f06856b2b4fe.jpg",
-    "static/media/orange.png": "/portfolio/static/media/orange.0b97480001e4ed432d06.png",
+    "static/media/orange2.png": "/portfolio/static/media/orange2.2120eede5fb143474f91.png",
     "static/media/mmb.gif": "/portfolio/static/media/mmb.9076a73cf0267aefd26a.gif",
     "static/media/ttt.gif": "/portfolio/static/media/ttt.1ae346600754dda5b868.gif",
     "static/media/weather.gif": "/portfolio/static/media/weather.1929ea105cc837a010ce.gif",
     "static/media/vtf_victorianna_thin-webfont.ttf": "/portfolio/static/media/vtf_victorianna_thin-webfont.c3b8b4f31aa6399b1246.ttf",
     "index.html": "/portfolio/index.html",
-    "main.9febe94a.css.map": "/portfolio/static/css/main.9febe94a.css.map",
-    "main.b9d8fd36.js.map": "/portfolio/static/js/main.b9d8fd36.js.map",
+    "main.034fcb0e.css.map": "/portfolio/static/css/main.034fcb0e.css.map",
+    "main.43b1a86d.js.map": "/portfolio/static/js/main.43b1a86d.js.map",
     "787.37faa4c4.chunk.js.map": "/portfolio/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9febe94a.css",
-    "static/js/main.b9d8fd36.js"
+    "static/css/main.034fcb0e.css",
+    "static/js/main.43b1a86d.js"
   ]
 }
