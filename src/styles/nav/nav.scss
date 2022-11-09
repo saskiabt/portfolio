@@ -3,13 +3,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100vw;
+  width: 100%;
   padding-left: 2%;
   padding-right: 2%;
   font-size: 1.5em;
   border-bottom: 1px solid black;
   position: sticky;
-  top: 0;
   background-color: white;
   // padding-top: 2%;
 
@@ -33,7 +32,7 @@
   background: none;
 
   @media screen and (min-width: 800px) {
-    font-size: 4em;
+    font-size: 3.3em;
     padding-right: 0px;
   }
 }
@@ -66,6 +65,7 @@
     color: black;
     padding-top: 5px;
     padding-left: 0px;
+    top: -2em;
 
     .button-wrapper {
       gap: 5px;

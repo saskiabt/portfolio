@@ -1,140 +1,65 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import ArtCard from "../ArtCard/ArtCard";
 import "./Artpage.css";
-import flowers2 from "../../img/artpage/flowers2.jpg";
-import flowers2ZO from "../../img/artpage/flowers2-zoomout.png";
-import flowers from "../../img/artpage/flowers1.png";
-import ianLG from "../../img/artpage/ian-lg.jpg";
-import ianZoom from "../../img/artpage/ian-zoom.png";
-import yellowRainCoat from "../../img/artpage/yellowraincoat.png";
-import yellowRainCoat2 from "../../img/artpage/yellowraincoat-2.png";
-import talia from "../../img/artpage/talia.png";
-import fernando from "../../img/artpage/fernando.jpg";
-import binta from "../../img/artpage/binta.jpeg";
-import magenta from "../../img/artpage/magenta.jpeg";
-import orange from "../../img/artpage/orange2.png";
-import blueKimono from "../../img/artpage/blueKimono.jpg";
-import colorBlock from "../../img/artpage/colorblock.png";
+import "./modal.css";
+import artworks from "./artworks";
+import { ModalContext } from "../../context/modal-context";
 
 function Artpage() {
-  const artworks = {
-    flowers2: {
-      coverIMG: flowers2,
-      altIMG: [flowers2ZO],
-      title: "Untitled",
-      length: 18,
-      width: 24,
-      year: "2022",
-      material: "Acrylic on Canvas",
-    },
-    flowers: {
-      coverIMG: flowers,
-      altIMG: [],
-      title: "Lilies in the Morning Light",
-      length: 16,
-      width: 20,
-      year: "2021",
-      material: "Acrylic on Canvas",
-    },
-    ianLG: {
-      coverIMG: ianLG,
-      altIMG: [ianZoom],
-      title: "Tutu's Kimono",
-      length: 60,
-      width: 26,
-      year: "2021",
-      material: "Acrylic and Oil on Canvas",
-    },
-    yellowRainCoat: {
-      coverIMG: yellowRainCoat,
-      altIMG: [yellowRainCoat2],
-      title: "Yellow Poncho",
-      length: 24,
-      width: 18,
-      year: "2021",
-      material: "Acrylic and Oil on Canvas",
-    },
-    talia: {
-      coverIMG: talia,
-      altIMG: [],
-      title: "Talia",
-      length: 60,
-      width: 36,
-      year: "2021",
-      material: "Acrylic on Canvas",
-    },
-    fernando: {
-      coverIMG: fernando,
-      altIMG: [],
-      title: "Fernando",
-      length: 40,
-      width: 30,
-      year: "2021",
-      material: "Acrylic on Canvas",
-    },
-    binta: {
-      coverIMG: binta,
-      altIMG: [],
-      title: "Binta",
-      length: 30,
-      width: 24,
-      year: "2020",
-      material: "Acrylic on Canvas",
-    },
-    magenta: {
-      coverIMG: magenta,
-      altIMG: [],
-      title: "Untitled - Pink",
-      length: 30,
-      width: 24,
-      year: "2020",
-      material: "Acrylic on Canvas",
-    },
-    orange: {
-      coverIMG: orange,
-      altIMG: [],
-      title: "Untitled - Orange",
-      length: 36,
-      width: 48,
-      year: "2021",
-      material: "Acrylic on Canvas",
-    },
-    blueKimono: {
-      coverIMG: blueKimono,
-      altIMG: [],
-      title: "Tutu's Kimono II ",
-      length: 60,
-      width: 36,
-      year: "2021",
-      material: "Oil and Acrylic on Canvas",
-    },
-    colorBlock: {
-      coverIMG: colorBlock,
-      altIMG: [],
-      title: "Lara | Colorblock",
-      length: 30,
-      width: 24,
-      year: "2020",
-      material: "Acrylic on Canvas",
-    },
+  const { modal, setModal } = useContext(ModalContext);
+  const hideModal = () => {
+    setModal({
+      ...modal,
+      isShowing: false,
+      image: "",
+      altIMG: "",
+      title: "",
+      length: null,
+      width: null,
+      year: "",
+      materials: "",
+    });
   };
 
-  return (
-    <div className="ArtPage">
-      <div className="lr">
-        <ArtCard artwork={artworks.flowers2} />
-        <ArtCard artwork={artworks.binta} />
-        <ArtCard artwork={artworks.yellowRainCoat} />
-        <ArtCard artwork={artworks.talia} />
-        <ArtCard artwork={artworks.colorBlock} />
-        <ArtCard artwork={artworks.orange} />
+  if (!modal.isShowing) {
+    return (
+      <div className="ArtPage">
+        <div className="lr">
+          <ArtCard artwork={artworks.flowers2} />
+          <ArtCard artwork={artworks.binta} />
+          <ArtCard artwork={artworks.yellowRainCoat} />
+          <ArtCard artwork={artworks.talia} />
+          <ArtCard artwork={artworks.colorBlock} />
+          <ArtCard artwork={artworks.orange} />
+        </div>
+        <div className="lr">
+          <ArtCard artwork={artworks.flowers} />
+          <ArtCard artwork={artworks.ianLG} />
+          <ArtCard artwork={artworks.fernando} />
+          <ArtCard artwork={artworks.magenta} />
+          <ArtCard artwork={artworks.blueKimono} />
+        </div>
       </div>
-      <div className="lr">
-        <ArtCard artwork={artworks.flowers} />
-        <ArtCard artwork={artworks.ianLG} />
-        <ArtCard artwork={artworks.fernando} />
-        <ArtCard artwork={artworks.magenta} />
-        <ArtCard artwork={artworks.blueKimono} />
+    );
+  }
+  return (
+    <div className="modal">
+      <div className="left">
+        <button type="button" onClick={hideModal}>
+          <FontAwesomeIcon icon={faArrowLeft} id="arrow" /> Back
+        </button>
+        <div className="modal-info">
+          <h3>{modal.title}</h3>
+          <p>{modal.year}</p>
+          <p>
+            {modal.length} x {modal.width} inches
+          </p>
+        </div>
+      </div>
+      <div className="modal-img-container right">
+        <img src={modal.image} alt="artwork" />
       </div>
     </div>
   );

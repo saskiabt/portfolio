@@ -113,17 +113,6 @@ p {
 }
 
 @media screen and (max-width: 450px) {
-  #name {
-    font-size: 2em;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #name {
-    font-size: 2em;
-    margin-right: 10px;
-  }
   p {
     font-size: 3.5vmin;
   }
@@ -162,7 +151,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -203,4 +191,10 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+html,
+body,
+#root,
+.App {
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
