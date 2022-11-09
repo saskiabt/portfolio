@@ -33,19 +33,6 @@
         "forbidDefaultForRequired": true,
         "functions": "defaultArguments" //Here
       }
-    ],
-    "react/jsx-filename-extension": "off",
-    "rules": {
-      "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-          "js": 0,
-          "jsx": 0,
-          "ts": 0,
-          "tsx": 0
-        }
-      ]
-    }
+    ]
   }
 }
