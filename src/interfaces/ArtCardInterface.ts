@@ -9,6 +9,7 @@ export interface ArtInterface {
   year: string;
   material: string;
 }
+
 export interface ArtworksInterface {
   [key: string]: ArtInterface;
 }

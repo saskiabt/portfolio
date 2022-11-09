@@ -11,7 +11,7 @@
   position: sticky;
   top: 0;
   background-color: white;
-  gap: 10px;
+  // padding-top: 2%;
 
   .button-wrapper {
     display: flex;
@@ -19,6 +19,22 @@
     align-items: flex-end;
     padding-bottom: 1px;
     gap: 1em;
+  }
+}
+
+.home-button {
+  font-family: "Victorianna";
+  font-size: 3em;
+  border: 0px;
+  color: blue;
+  cursor: pointer;
+  bottom: -22px;
+  position: relative;
+  background: none;
+
+  @media screen and (min-width: 800px) {
+    font-size: 4em;
+    padding-right: 0px;
   }
 }
 
@@ -48,9 +64,20 @@
   .header {
     gap: 0px;
     color: black;
+    padding-top: 5px;
 
     .button-wrapper {
-      gap: 0.7em;
+      gap: 5px;
     }
+  }
+
+  .home-button {
+    font-size: 1.4em;
+    padding-right: 0px;
+    bottom: -8px;
+  }
+
+  .button-wrapper .navButton {
+    font-size: 4vmin;
   }
 }

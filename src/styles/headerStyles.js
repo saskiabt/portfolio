@@ -12,6 +12,7 @@ const headerStyles = {
   top: 0,
   backgroundColor: "white",
   gap: "10px",
+  paddingTop: "2.5%",
 };
 
 export default headerStyles;

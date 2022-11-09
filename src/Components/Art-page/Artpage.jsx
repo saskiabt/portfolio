@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ArtCard from "../ArtCard/ArtCard.tsx";
+import ArtCard from "../ArtCard/ArtCard";
 import "./Artpage.css";
 import flowers2 from "../../img/artpage/flowers2.jpg";
 import flowers2ZO from "../../img/artpage/flowers2-zoomout.png";
@@ -17,7 +17,7 @@ import blueKimono from "../../img/artpage/blueKimono.jpg";
 import colorBlock from "../../img/artpage/colorblock.png";
 
 function Artpage() {
-  const [artworks, setArtworks] = useState({
+  const artworks = {
     flowers2: {
       coverIMG: flowers2,
       altIMG: [flowers2ZO],
@@ -117,24 +117,24 @@ function Artpage() {
       year: "2020",
       material: "Acrylic on Canvas",
     },
-  });
+  };
 
   return (
     <div className="ArtPage">
       <div className="lr">
-        <ArtCard artwork={artworks.flowers2} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.binta} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.yellowRainCoat} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.talia} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.colorBlock} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.orange} setArtworks={setArtworks} />
+        <ArtCard artwork={artworks.flowers2} />
+        <ArtCard artwork={artworks.binta} />
+        <ArtCard artwork={artworks.yellowRainCoat} />
+        <ArtCard artwork={artworks.talia} />
+        <ArtCard artwork={artworks.colorBlock} />
+        <ArtCard artwork={artworks.orange} />
       </div>
       <div className="lr">
-        <ArtCard artwork={artworks.flowers} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.ianLG} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.fernando} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.magenta} setArtworks={setArtworks} />
-        <ArtCard artwork={artworks.blueKimono} setArtworks={setArtworks} />
+        <ArtCard artwork={artworks.flowers} />
+        <ArtCard artwork={artworks.ianLG} />
+        <ArtCard artwork={artworks.fernando} />
+        <ArtCard artwork={artworks.magenta} />
+        <ArtCard artwork={artworks.blueKimono} />
       </div>
     </div>
   );

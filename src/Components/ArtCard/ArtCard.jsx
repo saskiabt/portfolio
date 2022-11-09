@@ -4,15 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 
 import "./ArtCard.css";
-import { ArtInterface } from "../../interfaces/ArtCardInterface";
 
-function ArtCard({
-  artwork,
-  setArtworks,
-}: {
-  artwork: ArtInterface;
-  setArtworks: Function;
-}) {
+function ArtCard({ artwork, setArtworks }) {
   const { coverIMG, altIMG, title, length, width, year, material } = artwork;
   const [activeIMG, setActiveIMG] = useState(coverIMG);
   const [modalIsShowing, setModalIsShowing] = useState(false);
@@ -49,7 +42,7 @@ function ArtCard({
               >
                 <img src={coverIMG} alt="thumbnail button" />
               </button>
-              {altIMG.map((image: string, i: number) => {
+              {altIMG.map((image, i) => {
                 return (
                   <button
                     type="button"
