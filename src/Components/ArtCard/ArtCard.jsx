@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -5,14 +6,15 @@ import { faX } from "@fortawesome/free-solid-svg-icons";
 
 import "./ArtCard.css";
 
-function ArtCard({ artwork, setArtworks }) {
-  const { coverIMG, altIMG, title, length, width, year, material } = artwork;
+function ArtCard({ artwork }) {
+  const { coverIMG, altIMG, title, length, width, year } = artwork;
   const [activeIMG, setActiveIMG] = useState(coverIMG);
+  // eslint-disable-next-line no-unused-vars
   const [modalIsShowing, setModalIsShowing] = useState(false);
 
-  const toggleModal = () => {
-    setModalIsShowing(!modalIsShowing);
-  };
+  // const toggleModal = () => {
+  //   setModalIsShowing(!modalIsShowing);
+  // };
 
   // const toggleActiveImg = () => {
   //   activeIMG === coverIMG ? setActiveIMG(altIMG[0]) : setActiveIMG(coverIMG);
@@ -67,7 +69,7 @@ function ArtCard({ artwork, setArtworks }) {
             <FontAwesomeIcon icon={faX} />
           </button>
           <div>
-            <img src={activeIMG} />
+            <img src={activeIMG} alt="artwork" />
           </div>
           <div>
             <h2>{title}</h2>
