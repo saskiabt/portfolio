@@ -39,6 +39,15 @@ function ArtCard({ artwork }) {
       </button>
       {altIMG.length > 0 && (
         <div className="thumbnail-container">
+          <button
+            type="button"
+            className="thumbnail"
+            onClick={() => {
+              setActiveIMG(coverIMG);
+            }}
+          >
+            <img src={coverIMG} alt="thumbnail button" />
+          </button>
           {altIMG.map((image, i) => {
             return (
               <button
@@ -53,15 +62,6 @@ function ArtCard({ artwork }) {
               </button>
             );
           })}
-          <button
-            type="button"
-            className="thumbnail"
-            onClick={() => {
-              setActiveIMG(coverIMG);
-            }}
-          >
-            <img src={coverIMG} alt="thumbnail button" />
-          </button>
         </div>
       )}
     </div>
