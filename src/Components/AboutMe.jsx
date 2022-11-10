@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import "./AboutMe.css";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const greeting = {
@@ -12,9 +13,7 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <div className="about-section" style={sectionPadding} ref={ref}>
       <h1 className="font-face-gm" id="greeting" style={greeting}>
-        {/* <span className="rotate">✿ </span> */}
         Hi, I&apos;m Saskia Binder{"   "}
-        {/* <span className="rotate">✿</span> */}
       </h1>
       <p>
         I&apos;m a full stack web developer based in Brooklyn, NY. I am
