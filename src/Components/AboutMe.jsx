@@ -28,9 +28,8 @@ const AboutMe = React.forwardRef((props, ref) => {
         in Photoshop, Illustrator, and Figma for UI and design.
       </p>
       <p>
-        This site was built in React with TypeScript & the React Context API.
-        Fonts courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type
-        Foundry.
+        This site was built in React with TypeScript & React Context. Fonts
+        courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type Foundry.
       </p>
     </div>
   );
