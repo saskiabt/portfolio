@@ -1,10 +1,14 @@
 /* eslint-disable react/jsx-filename-extension */
-import { React, useRef } from "react";
+import { React, useRef, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
+import MobileNav from "./Components/Mobile-Nav/MobileNav";
+import { ModalContext } from "./context/modal-context";
 
 function App() {
+  const { isExpanded } = useContext(ModalContext);
+
   const projectsSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
 
@@ -30,7 +34,10 @@ function App() {
         scrollToProjects={scrollToProjects}
         scrollToAbout={scrollToAbout}
       />
-      <Outlet context={{ projectsSectionRef, aboutSectionRef }} />
+      <MobileNav />
+      {!isExpanded && (
+        <Outlet context={{ projectsSectionRef, aboutSectionRef }} />
+      )}
     </div>
   );
 }

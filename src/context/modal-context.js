@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React, { createContext, useState } from "react";
 import PropTypes, { element } from "prop-types";
 
@@ -16,9 +17,12 @@ export function ModalProvider({ children }) {
     materials: "",
   });
 
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <ModalContext.Provider value={{ modal, setModal }}>
+    <ModalContext.Provider
+      value={{ modal, setModal, isExpanded, setIsExpanded }}
+    >
       {children}
     </ModalContext.Provider>
   );
