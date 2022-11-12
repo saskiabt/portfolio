@@ -13,6 +13,8 @@
   width: 100%;
   max-height: 90vh;
   background-color: white;
+  -webkit-animation: fadein 1.2s;
+          animation: fadein 1.2s;
 }
 
 .active-image-container {
@@ -24,6 +26,7 @@
   padding: 0px;
   cursor: pointer;
   border-bottom: 1px solid purple;
+  transition: ease-in 1s;
 }
 
 .thumbnail-container {
@@ -63,4 +66,22 @@
 }
 .hidden {
   display: none;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=ArtCard.css.map */
