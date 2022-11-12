@@ -1,3 +1,7 @@
 .card-button {
   color: black;
+}
+
+.gifs:hover {
+  opacity: 120%;
 }/*# sourceMappingURL=card.css.map */

@@ -11,6 +11,12 @@
   max-height: 90vh;
   background-color: white;
   animation: fadein 1.2s;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    opacity: 90%;
+    transform: scale(0.99);
+  }
 }
 
 .active-image-container {

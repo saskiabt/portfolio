@@ -45,6 +45,12 @@ function ArtCard({ artwork }) {
             onClick={() => {
               setActiveIMG(coverIMG);
             }}
+            onMouseOver={() => {
+              setActiveIMG(coverIMG);
+            }}
+            onFocus={() => {
+              setActiveIMG(coverIMG);
+            }}
           >
             <img src={coverIMG} alt="thumbnail button" />
           </button>
@@ -55,6 +61,12 @@ function ArtCard({ artwork }) {
                 className="thumbnail"
                 key={uuidv4()}
                 onClick={() => {
+                  setActiveIMG(altIMG[i]);
+                }}
+                onMouseOver={() => {
+                  setActiveIMG(altIMG[i]);
+                }}
+                onFocus={() => {
                   setActiveIMG(altIMG[i]);
                 }}
               >
