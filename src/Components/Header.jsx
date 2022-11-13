@@ -38,7 +38,7 @@ function Header({ scrollToAbout, scrollToProjects }) {
 
       <div className="button-wrapper">
         <Button text="About" onClick={handleAboutClick} />
-        <Button text="Projects" onClick={handleProjectsClick} />
+        <Button text="Coding" onClick={handleProjectsClick} />
         <Button
           text="Artwork"
           onClick={() => {

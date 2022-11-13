@@ -6,30 +6,31 @@ import "./ArtCard.css";
 import { ModalContext } from "../../context/modal-context";
 
 function ArtCard({ artwork }) {
-  const { coverIMG, altIMG, title, length, width, year, materials } = artwork;
-  const [activeIMG, setActiveIMG] = useState(coverIMG);
+  const { image, altIMG, title, length, width, year, material } = artwork;
+  const [activeIMG, setActiveIMG] = useState(image);
   const { modal, setModal } = useContext(ModalContext);
 
   const showModal = () => {
     setModal({
       ...modal,
       isShowing: true,
-      image: coverIMG,
+      image,
       altIMG,
       title,
       length,
       width,
       year,
-      materials,
+      material,
     });
   };
 
   return (
-    <div className="ArtCard">
+    <div className={modal.isShowing ? "ArtCard-Modal" : "ArtCard"}>
       <button
         className="active-image-container"
         type="button"
-        onClick={showModal}
+        onClick={!modal.isShowing ? showModal : null}
+        style={modal.isShowing ? { border: "0px" } : null}
       >
         <img
           className="active-img"
@@ -43,18 +44,18 @@ function ArtCard({ artwork }) {
             type="button"
             className="thumbnail"
             onClick={() => {
-              setActiveIMG(coverIMG);
+              setActiveIMG(image);
             }}
             onMouseOver={() => {
-              setActiveIMG(coverIMG);
+              setActiveIMG(image);
             }}
             onFocus={() => {
-              setActiveIMG(coverIMG);
+              setActiveIMG(image);
             }}
           >
-            <img src={coverIMG} alt="thumbnail button" />
+            <img src={image} alt="thumbnail button" />
           </button>
-          {altIMG.map((image, i) => {
+          {altIMG.map((btnImage, i) => {
             return (
               <button
                 type="button"
@@ -70,7 +71,7 @@ function ArtCard({ artwork }) {
                   setActiveIMG(altIMG[i]);
                 }}
               >
-                <img src={image} alt="thumbnail button" />
+                <img src={btnImage} alt="thumbnail button" />
               </button>
             );
           })}

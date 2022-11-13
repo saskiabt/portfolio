@@ -33,8 +33,22 @@
 @media only screen and (max-width: 800px) {
   .modal {
     flex-direction: column;
+    gap: 20px;
   }
   .modal button {
     color: black;
+  }
+  .modal .left {
+    flex-direction: row;
+    gap: 10%;
+  }
+  .modal .left > button {
+    height: 50%;
+  }
+  .modal p {
+    font-size: smaller;
+  }
+  .modal img {
+    max-height: 60vh;
   }
 }/*# sourceMappingURL=modal.css.map */

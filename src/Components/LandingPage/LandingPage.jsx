@@ -1,7 +1,7 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
-import AboutMe from "../AboutMe";
-import Projects from "../Projects";
+import AboutMe from "../AboutMe/AboutMe";
+import Projects from "../Projects/Projects";
 import "./LandingPage.css";
 
 function LandingPage() {

@@ -12,6 +12,11 @@ import magenta from "../../img/artpage/magenta.jpeg";
 import orange from "../../img/artpage/orange2.png";
 import blueKimono from "../../img/artpage/blueKimono.jpg";
 import colorBlock from "../../img/artpage/colorblock.png";
+import colorBlock2 from "../../img/artpage/colorblock2.jpg";
+import fern2 from "../../img/artpage/fern2.jpg";
+import fern3 from "../../img/artpage/fern3.jpg";
+import talia2 from "../../img/artpage/talia2.jpg";
+import talia3 from "../../img/artpage/talia3.jpg";
 
 const artworksList = {
   flowers,
@@ -22,17 +27,22 @@ const artworksList = {
   yellowRainCoat,
   yellowRainCoat2,
   talia,
+  talia2,
+  talia3,
   fernando,
+  fern2,
+  fern3,
   binta,
   magenta,
   orange,
   blueKimono,
   colorBlock,
+  colorBlock2,
 };
 
 const artworks = {
   flowers2: {
-    coverIMG: artworksList.flowers2,
+    image: artworksList.flowers2,
     altIMG: [artworksList.flowers2ZO],
     title: "Untitled",
     length: 18,
@@ -41,7 +51,7 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   flowers: {
-    coverIMG: artworksList.flowers,
+    image: artworksList.flowers,
     altIMG: [],
     title: "Lilies in the Morning Light",
     length: 16,
@@ -50,7 +60,7 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   ianLG: {
-    coverIMG: artworksList.ianLG,
+    image: artworksList.ianLG,
     altIMG: [artworksList.ianZoom],
     title: "Tutu's Kimono",
     length: 60,
@@ -59,7 +69,7 @@ const artworks = {
     material: "Acrylic and Oil on Canvas",
   },
   yellowRainCoat: {
-    coverIMG: artworksList.yellowRainCoat,
+    image: artworksList.yellowRainCoat,
     altIMG: [artworksList.yellowRainCoat2],
     title: "Yellow Poncho",
     length: 24,
@@ -68,8 +78,8 @@ const artworks = {
     material: "Acrylic and Oil on Canvas",
   },
   talia: {
-    coverIMG: artworksList.talia,
-    altIMG: [],
+    image: artworksList.talia,
+    altIMG: [talia2, talia3],
     title: "Talia",
     length: 60,
     width: 36,
@@ -77,8 +87,8 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   fernando: {
-    coverIMG: artworksList.fernando,
-    altIMG: [],
+    image: artworksList.fernando,
+    altIMG: [fern2, fern3],
     title: "Fernando",
     length: 40,
     width: 30,
@@ -86,7 +96,7 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   binta: {
-    coverIMG: artworksList.binta,
+    image: artworksList.binta,
     altIMG: [],
     title: "Binta",
     length: 30,
@@ -95,7 +105,7 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   magenta: {
-    coverIMG: artworksList.magenta,
+    image: artworksList.magenta,
     altIMG: [],
     title: "Untitled - Pink",
     length: 30,
@@ -104,7 +114,7 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   orange: {
-    coverIMG: artworksList.orange,
+    image: artworksList.orange,
     altIMG: [],
     title: "Untitled - Orange",
     length: 36,
@@ -113,7 +123,7 @@ const artworks = {
     material: "Acrylic on Canvas",
   },
   blueKimono: {
-    coverIMG: artworksList.blueKimono,
+    image: artworksList.blueKimono,
     altIMG: [],
     title: "Tutu's Kimono II ",
     length: 60,
@@ -122,8 +132,8 @@ const artworks = {
     material: "Oil and Acrylic on Canvas",
   },
   colorBlock: {
-    coverIMG: artworksList.colorBlock,
-    altIMG: [],
+    image: artworksList.colorBlock,
+    altIMG: [colorBlock2],
     title: "Lara | Colorblock",
     length: 30,
     width: 24,

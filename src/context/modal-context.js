@@ -14,7 +14,7 @@ export function ModalProvider({ children }) {
     length: null,
     width: null,
     year: "",
-    materials: "",
+    material: "",
   });
 
   const [isExpanded, setIsExpanded] = useState(false);

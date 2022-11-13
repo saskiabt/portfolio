@@ -100,7 +100,11 @@ p {
 }
 
 .italic {
-  font-size: smaller;
+  font-style: italic;
+}
+
+.bold {
+  border-bottom: 1px solid darkgray;
 }
 
 .card {

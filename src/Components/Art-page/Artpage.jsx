@@ -9,6 +9,7 @@ import { ModalContext } from "../../context/modal-context";
 
 function Artpage() {
   const { modal, setModal } = useContext(ModalContext);
+
   const hideModal = () => {
     setModal({
       ...modal,
@@ -19,7 +20,7 @@ function Artpage() {
       length: null,
       width: null,
       year: "",
-      materials: "",
+      material: "",
     });
   };
 
@@ -53,14 +54,14 @@ function Artpage() {
         <div className="modal-info">
           <h3>{modal.title}</h3>
           <p>{modal.year}</p>
+          <p>{modal.material}</p>
           <p>
             {modal.length} x {modal.width} inches
           </p>
         </div>
       </div>
-      <div className="modal-img-container right">
-        <img src={modal.image} alt="artwork" />
-      </div>
+
+      <ArtCard artwork={modal} />
     </div>
   );
 }
