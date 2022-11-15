@@ -14,14 +14,16 @@
 
   .card-name {
     font-family: "roboto-mono", "monospace";
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    padding-top: 10px;
+    padding: 10px 0;
     font-size: larger;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   .card-text {
-    padding: 0px 50px 15px 50px;
+    padding: 10px 50px 15px 50px;
   }
 
   .button-container {
@@ -31,10 +33,6 @@
     align-items: center;
     padding-bottom: 2em;
     gap: 0.5em;
-  }
-
-  .card-button {
-    color: black;
   }
 }
 

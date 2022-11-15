@@ -7,7 +7,7 @@ const AboutMe = React.forwardRef((props, ref) => {
   const navigate = useNavigate();
   const [isItalic, setIsItalic] = useState(false);
   const greeting = {
-    color: "blue",
+    color: "#3c00ff",
   };
 
   const sectionPadding = {
