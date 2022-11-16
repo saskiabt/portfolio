@@ -61,7 +61,7 @@ function Header({ scrollToAbout }) {
           className="navButton"
           onClick={() => setIsDarkMode(!isDarkMode)}
         >
-          <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} />
+          <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
         </button>
       </div>
     </div>
