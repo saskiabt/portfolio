@@ -29,7 +29,7 @@ function ArtCard({ artwork }) {
       <button
         className="active-image-container"
         type="button"
-        onClick={!modal.isShowing ? showModal : null}
+        onClick={!modal.isShowing ? showModal() : null}
         style={modal.isShowing ? { border: "0px" } : null}
       >
         <img
