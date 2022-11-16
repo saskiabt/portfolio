@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   gap: 5%;
-  align-items: center;
+  align-items: flex-start;
   max-height: 100%;
-  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  height: 100%;
 }
 .modal img {
   -o-object-fit: contain;
@@ -16,7 +16,7 @@
 .modal .left {
   display: flex;
   flex-direction: column;
-  gap: 2%;
+  gap: 10px;
   height: 100%;
   max-width: 70%;
 }
@@ -30,13 +30,15 @@
   flex-direction: column;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .modal {
     flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
   .modal button {
     color: black;
+    height: 100%;
   }
   .modal .left {
     flex-direction: row;
@@ -50,5 +52,10 @@
   }
   .modal img {
     max-height: 60vh;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .modal {
+    padding-top: 5%;
   }
 }/*# sourceMappingURL=modal.css.map */

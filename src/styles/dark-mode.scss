@@ -1,0 +1,119 @@
+$light-purple: rgb(188 176 242 / 82%);
+$light-grey: rgb(188 187 189 / 83%);
+$med-grey: rgb(255 255 255 / 59%);
+$blue-purple: #4150ff;
+$background: #121212;
+$offwhite: #ffffffd4;
+
+.dark-mode {
+  * {
+    background-color: $background;
+  }
+
+  .LandingPage {
+    background-color: $background;
+    color: $light-grey;
+
+    span {
+      color: $offwhite;
+    }
+  }
+
+  .header {
+    background-color: $background;
+    color: $offwhite;
+    border-bottom: 1px solid rgb(108 108 108 / 83%);
+  }
+
+  .button-wrapper {
+    .navButton {
+      background-color: $background;
+      color: $offwhite;
+      border-top: 1px solid $light-grey;
+      border-left: 1px solid $light-grey;
+      border-right: 1px solid $light-grey;
+      position: relative;
+
+      &:hover {
+        color: $offwhite;
+      }
+    }
+  }
+
+  #greeting {
+    color: rgb(106 117 242);
+    // color: $light-purple;
+  }
+  .font-face-gm,
+  .home-button {
+    color: rgba(145, 153, 245, 0.802);
+  }
+  .home-button {
+    color: $light-grey;
+  }
+
+  #about-link {
+    color: $offwhite;
+  }
+
+  .Card {
+    border: 1px solid rgb(105 102 107 / 83%);
+
+    .card-name {
+      background-color: #252432;
+      color: white;
+    }
+  }
+
+  .card-button {
+    background-color: rgb(43 38 107);
+    color: $offwhite;
+
+    &:hover {
+      background-color: $offwhite;
+      color: rgb(43 38 107);
+    }
+  }
+
+  .ArtCard,
+  .ArtCard-Modal {
+    border: 1px solid rgb(79 74 89 / 83%);
+  }
+
+  .active-image-container {
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .thumbnail-container {
+    border: 1px solid rgb(79 74 89 / 83%);
+  }
+
+  .modal {
+    color: $offwhite;
+
+    button {
+      color: $offwhite;
+      border: 1px solid $light-grey;
+
+      &:active {
+        border: 1px solid white;
+      }
+    }
+  }
+
+  .MobileNav,
+  .MobileNav button {
+    background-color: $background;
+    color: $light-grey;
+
+    button {
+      &:hover {
+        color: $offwhite;
+      }
+    }
+  }
+}
+
+.Dark-Mode .App {
+  background: $background;
+}

@@ -7,7 +7,7 @@ import MobileNav from "./Components/Mobile-Nav/MobileNav";
 import { ModalContext } from "./context/modal-context";
 
 function App() {
-  const { isExpanded } = useContext(ModalContext);
+  const { isExpanded, isDarkMode } = useContext(ModalContext);
 
   const projectsSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -29,7 +29,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div
+      className={isDarkMode ? "App dark-mode" : "App"}
+      style={isDarkMode ? { backgroundColor: "#121212" } : null}
+    >
       <Header
         scrollToProjects={scrollToProjects}
         scrollToAbout={scrollToAbout}

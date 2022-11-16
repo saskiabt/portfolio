@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./MobileNav.css";
 import { ModalContext } from "../../context/modal-context";
@@ -9,7 +10,8 @@ import openLink from "../openLink";
 
 function MobileNav() {
   const navigate = useNavigate();
-  const { isExpanded, setIsExpanded } = useContext(ModalContext);
+  const { isExpanded, setIsExpanded, isDarkMode, setIsDarkMode } =
+    useContext(ModalContext);
   return (
     <div className="MobileNav">
       {!isExpanded ? (
@@ -56,6 +58,13 @@ function MobileNav() {
             }
           >
             <FontAwesomeIcon icon={faLinkedin} />
+          </button>
+          <button
+            type="button"
+            className="navButton"
+            onClick={() => setIsDarkMode(!isDarkMode)}
+          >
+            <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} />
           </button>
         </div>
       )}

@@ -1,0 +1,87 @@
+.dark-mode * {
+  background-color: #121212;
+}
+.dark-mode .LandingPage {
+  background-color: #121212;
+  color: rgba(188, 187, 189, 0.83);
+}
+.dark-mode .LandingPage span {
+  color: rgba(255, 255, 255, 0.831372549);
+}
+.dark-mode .header {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.831372549);
+  border-bottom: 1px solid rgba(108, 108, 108, 0.83);
+}
+.dark-mode .button-wrapper .navButton {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.831372549);
+  border-top: 1px solid rgba(188, 187, 189, 0.83);
+  border-left: 1px solid rgba(188, 187, 189, 0.83);
+  border-right: 1px solid rgba(188, 187, 189, 0.83);
+  position: relative;
+}
+.dark-mode .button-wrapper .navButton:hover {
+  color: rgba(255, 255, 255, 0.831372549);
+}
+.dark-mode #greeting {
+  color: rgb(106, 117, 242);
+}
+.dark-mode .font-face-gm,
+.dark-mode .home-button {
+  color: rgba(145, 153, 245, 0.802);
+}
+.dark-mode .home-button {
+  color: rgba(188, 187, 189, 0.83);
+}
+.dark-mode #about-link {
+  color: rgba(255, 255, 255, 0.831372549);
+}
+.dark-mode .Card {
+  border: 1px solid rgba(105, 102, 107, 0.83);
+}
+.dark-mode .Card .card-name {
+  background-color: #252432;
+  color: white;
+}
+.dark-mode .card-button {
+  background-color: rgb(43, 38, 107);
+  color: rgba(255, 255, 255, 0.831372549);
+}
+.dark-mode .card-button:hover {
+  background-color: rgba(255, 255, 255, 0.831372549);
+  color: rgb(43, 38, 107);
+}
+.dark-mode .ArtCard,
+.dark-mode .ArtCard-Modal {
+  border: 1px solid rgba(79, 74, 89, 0.83);
+}
+.dark-mode .active-image-container {
+  border-bottom: 1px solid rgba(188, 187, 189, 0.83);
+}
+.dark-mode .thumbnail-container {
+  border: 1px solid rgba(79, 74, 89, 0.83);
+}
+.dark-mode .modal {
+  color: rgba(255, 255, 255, 0.831372549);
+}
+.dark-mode .modal button {
+  color: rgba(255, 255, 255, 0.831372549);
+  border: 1px solid rgba(188, 187, 189, 0.83);
+}
+.dark-mode .modal button:active {
+  border: 1px solid white;
+}
+.dark-mode .MobileNav,
+.dark-mode .MobileNav button {
+  background-color: #121212;
+  color: rgba(188, 187, 189, 0.83);
+}
+.dark-mode .MobileNav button:hover,
+.dark-mode .MobileNav button button:hover {
+  color: rgba(255, 255, 255, 0.831372549);
+}
+
+.Dark-Mode .App {
+  background: #121212;
+}/*# sourceMappingURL=dark-mode.css.map */

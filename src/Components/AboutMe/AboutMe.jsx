@@ -1,14 +1,13 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import "./AboutMe.css";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const navigate = useNavigate();
+
   const [isItalic, setIsItalic] = useState(false);
-  const greeting = {
-    color: "#3c00ff",
-  };
 
   const sectionPadding = {
     padding: "1em",
@@ -20,7 +19,7 @@ const AboutMe = React.forwardRef((props, ref) => {
   };
   return (
     <div className="about-section" style={sectionPadding} ref={ref}>
-      <h1 className="font-face-gm" id="greeting" style={greeting}>
+      <h1 className="font-face-gm" id="greeting">
         Hi, I&apos;m Saskia Binder{"   "}
       </h1>
       <p>
@@ -37,6 +36,7 @@ const AboutMe = React.forwardRef((props, ref) => {
         <button
           type="button"
           style={buttonStyle}
+          id="about-link"
           className={isItalic ? "italic" : null}
           onMouseEnter={() => setIsItalic(true)}
           onMouseLeave={() => setIsItalic(false)}

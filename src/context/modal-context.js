@@ -17,11 +17,20 @@ export function ModalProvider({ children }) {
     material: "",
   });
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <ModalContext.Provider
-      value={{ modal, setModal, isExpanded, setIsExpanded }}
+      value={{
+        modal,
+        setModal,
+        isExpanded,
+        setIsExpanded,
+        isDarkMode,
+        setIsDarkMode,
+      }}
     >
       {children}
     </ModalContext.Provider>

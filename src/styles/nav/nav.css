@@ -55,27 +55,8 @@
   transition: ease-in-out 0.2s;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
   .header {
     display: none;
-    gap: 0px;
-    color: black;
-    padding-top: 5px;
-    padding-left: 0px;
-    top: -2em;
-  }
-  .header .button-wrapper {
-    gap: 5px;
-  }
-  .home-button {
-    font-size: 1.4em;
-    padding-right: 0px;
-    bottom: -8px;
-  }
-  .button-wrapper .navButton {
-    font-size: 4vmin;
-  }
-  .navButton {
-    color: black;
   }
 }/*# sourceMappingURL=nav.css.map */

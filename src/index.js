@@ -3,6 +3,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./styles.css";
+import "./styles/dark-mode.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf";
