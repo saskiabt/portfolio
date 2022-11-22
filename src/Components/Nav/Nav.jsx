@@ -2,7 +2,11 @@
 import React, { useContext } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/dark-mode.css";
@@ -55,6 +59,13 @@ function Header({ scrollToAbout }) {
           onClick={() => goToLink("https://github.com/saskiabt")}
         >
           <FontAwesomeIcon icon={faGithub} />
+        </button>
+        <button
+          type="button"
+          className="navButton"
+          onClick={() => goToLink("https://www.instagram.com/saskiamair/")}
+        >
+          <FontAwesomeIcon icon={faInstagram} />
         </button>
         <button
           type="button"
