@@ -85,13 +85,13 @@ p {
   border-width: 0.1px;
   background-color: #656cbf;
   border-radius: 50%;
-  font-size: 1.2em;
+  font-size: medium;
   color: white;
   box-shadow: inset 0px 1px 0px 5px rgba(45, 57, 133, 0.5215686275);
 }
 .card-button:hover {
   background: white;
-  font-size: medium;
+  font-size: 1.2em;
   border: 0.5px solid black;
   color: #2c3163;
 }

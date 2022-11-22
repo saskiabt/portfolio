@@ -23,7 +23,7 @@ const AboutMe = React.forwardRef((props, ref) => {
       <h1 className="font-face-gm" id="greeting">
         <TypewriterComponent
           options={{
-            strings: ["Hi, I'm Saskia Binder"],
+            strings: ["Hi, I'm Saskia Binder "],
             autoStart: true,
             loop: true,
             delay: 150,
@@ -39,7 +39,7 @@ const AboutMe = React.forwardRef((props, ref) => {
         engaging, responsive websites and applications that reflect my interests
         in art and design.
         <br />
-        <span className="bold">See my programming projects below!</span>
+        <span>See my programming projects below!</span>
       </p>
       <p>
         I&apos;m also a{" "}

@@ -4,9 +4,14 @@
 .dark-mode .LandingPage {
   background-color: #121212;
   color: rgba(188, 187, 189, 0.83);
+  transition: ease-in-out 0.5s;
 }
 .dark-mode .LandingPage span {
   color: rgba(255, 255, 255, 0.831372549);
+  transition: ease-in-out 0.5s;
+}
+.dark-mode .LandingPage .Typewriter > span {
+  color: rgba(235, 230, 255, 0.85);
 }
 .dark-mode .header {
   background-color: #121212;
@@ -24,12 +29,10 @@
 .dark-mode .button-wrapper .navButton:hover {
   color: rgba(255, 255, 255, 0.831372549);
 }
-.dark-mode #greeting {
-  color: rgb(106, 117, 242);
-}
 .dark-mode .font-face-gm,
 .dark-mode .home-button {
-  color: rgba(145, 153, 245, 0.802);
+  color: rgba(194, 199, 255, 0.8);
+  transition: ease-in-out 0.5s;
 }
 .dark-mode .home-button {
   color: rgba(188, 187, 189, 0.83);
@@ -37,20 +40,22 @@
 .dark-mode #about-link {
   color: rgba(255, 255, 255, 0.831372549);
 }
-.dark-mode .Card {
+.dark-mode s .Card {
   border: 1px solid rgba(105, 102, 107, 0.83);
 }
-.dark-mode .Card .card-name {
+.dark-mode s .Card .card-name {
   background-color: #252432;
   color: white;
 }
 .dark-mode .card-button {
-  background-color: rgb(43, 38, 107);
-  color: rgba(255, 255, 255, 0.831372549);
-}
-.dark-mode .card-button:hover {
   background-color: rgba(255, 255, 255, 0.831372549);
   color: rgb(43, 38, 107);
+  box-shadow: 0px 1px 0px 5px rgba(45, 57, 133, 0.52);
+}
+.dark-mode .card-button:hover {
+  background-color: rgb(43, 38, 107);
+  color: rgba(255, 255, 255, 0.831372549);
+  box-shadow: 0px 1px 0px 5px rgba(105, 121, 231, 0.77);
 }
 .dark-mode .ArtCard,
 .dark-mode .ArtCard-Modal {
