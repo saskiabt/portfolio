@@ -28,7 +28,7 @@ button {
 
 @font-face {
   font-family: "Victorianna";
-  src: local("Victorianna"), url("/Users/saskiabinder/repos/portfolio-site/src/fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf") format("truetype");
+  src: local("Victorianna"), url("../src/fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf") format("truetype");
 }
 .font-face-gm {
   font-family: "Victorianna";
