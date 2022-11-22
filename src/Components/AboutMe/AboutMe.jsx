@@ -39,10 +39,10 @@ const AboutMe = React.forwardRef((props, ref) => {
         engaging, responsive websites and applications that reflect my interests
         in art and design.
         <br />
-        <span>See my programming projects below!</span>
+        See my programming projects below!
       </p>
       <p>
-        I&apos;m also a{" "}
+        I&apos;m also a
         <button
           type="button"
           style={buttonStyle}
@@ -53,7 +53,7 @@ const AboutMe = React.forwardRef((props, ref) => {
           onClick={() => navigate("/portfolio/art")}
         >
           fine art painter and illustrator,
-        </button>{" "}
+        </button>
         and I am experienced in Photoshop, Illustrator, and Figma for UI and
         design.
       </p>

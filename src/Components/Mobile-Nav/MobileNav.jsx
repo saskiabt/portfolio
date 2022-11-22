@@ -5,13 +5,13 @@ import { faBars, faX, faSun } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./MobileNav.css";
-import { ModalContext } from "../../context/modal-context";
+import { GlobalContext } from "../../context/modal-context";
 import openLink from "../openLink";
 
 function MobileNav() {
   const navigate = useNavigate();
   const { isExpanded, setIsExpanded, isDarkMode, setIsDarkMode } =
-    useContext(ModalContext);
+    useContext(GlobalContext);
   return (
     <div className="MobileNav">
       {!isExpanded ? (

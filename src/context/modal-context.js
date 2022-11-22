@@ -1,10 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-constructed-context-values */
 import React, { createContext, useState } from "react";
-import PropTypes, { element } from "prop-types";
 
-export const ModalContext = createContext(null);
+export const GlobalContext = createContext(null);
 
-// eslint-disable-next-line react/require-default-props
 export function ModalProvider({ children }) {
   const [modal, setModal] = useState({
     isShowing: false,
@@ -18,11 +17,10 @@ export function ModalProvider({ children }) {
   });
 
   const [isDarkMode, setIsDarkMode] = useState(false);
-
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <ModalContext.Provider
+    <GlobalContext.Provider
       value={{
         modal,
         setModal,
@@ -33,11 +31,6 @@ export function ModalProvider({ children }) {
       }}
     >
       {children}
-    </ModalContext.Provider>
+    </GlobalContext.Provider>
   );
 }
-
-ModalProvider.propTypes = {
-  children:
-    PropTypes.objectOf(PropTypes.instanceOf(element)) || PropTypes.symbol,
-};

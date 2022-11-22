@@ -3,34 +3,46 @@ import React, { useState, useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 import "./ArtCard.css";
-import { ModalContext } from "../../context/modal-context";
+import { GlobalContext } from "../../context/modal-context";
 
 function ArtCard({ artwork }) {
   const { image, altIMG, title, length, width, year, material } = artwork;
   const [activeIMG, setActiveIMG] = useState(image);
-  const { modal, setModal } = useContext(ModalContext);
+  const { modal, setModal } = useContext(GlobalContext);
 
-  const showModal = () => {
-    setModal({
-      ...modal,
-      isShowing: true,
-      image,
-      altIMG,
-      title,
-      length,
-      width,
-      year,
-      material,
-    });
-  };
+  // const showModal = () => {
+  //   setModal({
+  //     ...modal,
+  //     isShowing: true,
+  //     image,
+  //     altIMG,
+  //     title,
+  //     length,
+  //     width,
+  //     year,
+  //     material,
+  //   });
+  // };
 
   return (
-    <div className={modal.isShowing ? "ArtCard-Modal" : "ArtCard"}>
+    <div className="ArtCard">
       <button
         className="active-image-container"
         type="button"
-        onClick={!modal.isShowing ? showModal() : null}
         style={modal.isShowing ? { border: "0px" } : null}
+        onClick={() =>
+          setModal({
+            ...modal,
+            isShowing: true,
+            image,
+            altIMG,
+            title,
+            length,
+            width,
+            year,
+            material,
+          })
+        }
       >
         <img
           className="active-img"

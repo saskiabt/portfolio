@@ -4,10 +4,10 @@ import { Outlet } from "react-router-dom";
 import "./App.css";
 import Nav from "./Components/Nav/Nav";
 import MobileNav from "./Components/Mobile-Nav/MobileNav";
-import { ModalContext } from "./context/modal-context";
+import { GlobalContext } from "./context/modal-context";
 
 function App() {
-  const { isExpanded, isDarkMode } = useContext(ModalContext);
+  const { isExpanded, isDarkMode } = useContext(GlobalContext);
 
   const projectsSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);

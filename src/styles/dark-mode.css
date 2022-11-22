@@ -8,7 +8,6 @@
 }
 .dark-mode .LandingPage span {
   color: rgba(255, 255, 255, 0.831372549);
-  transition: ease-in-out 0.5s;
 }
 .dark-mode .LandingPage .Typewriter > span {
   color: rgba(235, 230, 255, 0.85);
@@ -32,7 +31,6 @@
 .dark-mode .font-face-gm,
 .dark-mode .home-button {
   color: rgba(194, 199, 255, 0.8);
-  transition: ease-in-out 0.5s;
 }
 .dark-mode .home-button {
   color: rgba(188, 187, 189, 0.83);
@@ -40,10 +38,10 @@
 .dark-mode #about-link {
   color: rgba(255, 255, 255, 0.831372549);
 }
-.dark-mode s .Card {
+.dark-mode .Card {
   border: 1px solid rgba(105, 102, 107, 0.83);
 }
-.dark-mode s .Card .card-name {
+.dark-mode .Card .card-name {
   background-color: #252432;
   color: white;
 }

@@ -103,6 +103,7 @@ p {
 
 .italic {
   font-style: italic;
+  transition: ease-in-out 0.5s;
 }
 
 .bold {

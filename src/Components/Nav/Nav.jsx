@@ -8,10 +8,10 @@ import { faSun } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/dark-mode.css";
 import Button from "../Button";
 import "./nav.css";
-import { ModalContext } from "../../context/modal-context";
+import { GlobalContext } from "../../context/modal-context";
 
 function Header({ scrollToAbout }) {
-  const { isDarkMode, setIsDarkMode } = useContext(ModalContext);
+  const { isDarkMode, setIsDarkMode } = useContext(GlobalContext);
 
   const location = useLocation();
   const navigate = useNavigate();

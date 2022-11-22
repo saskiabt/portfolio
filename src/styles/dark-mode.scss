@@ -17,7 +17,6 @@ $offwhite: #ffffffd4;
 
     span {
       color: $offwhite;
-      transition: ease-in-out 0.5s;
     }
 
     .Typewriter > span {
@@ -49,7 +48,6 @@ $offwhite: #ffffffd4;
   .font-face-gm,
   .home-button {
     color: rgb(194 199 255 / 80%);
-    transition: ease-in-out 0.5s;
   }
   .home-button {
     color: $light-grey;
@@ -58,7 +56,8 @@ $offwhite: #ffffffd4;
   #about-link {
     color: $offwhite;
   }
-  s .Card {
+
+  .Card {
     border: 1px solid rgb(105 102 107 / 83%);
 
     .card-name {
