@@ -50,11 +50,12 @@
   cursor: pointer;
 
   &:hover {
-    // transform: scale(0.98);
     transform: translateY(2.4px);
-
     transition: ease-in-out 0.2s;
-    // border-bottom: 0.3px solid black;
+  }
+
+  &:active {
+    opacity: 60%;
   }
 }
 

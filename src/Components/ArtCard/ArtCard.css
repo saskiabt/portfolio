@@ -5,10 +5,10 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  transition: ease-in-out 0.3s;
 }
-.ArtCard .active-img:hover {
+.ArtCard:hover {
   transform: scale(0.99);
-  opacity: 0.89;
 }
 
 .active-img {

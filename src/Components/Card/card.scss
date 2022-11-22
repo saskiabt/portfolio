@@ -1,7 +1,13 @@
 .Card {
   width: 70%;
   border: 1px solid black;
-  max-width: 750px;
+  max-width: 600px;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    transform: scale(0.99);
+    box-shadow: 4px -3px 1px 1px #c5cefb, 10px -8px 1px #646cbf;
+  }
 
   .gifs {
     width: 100%;

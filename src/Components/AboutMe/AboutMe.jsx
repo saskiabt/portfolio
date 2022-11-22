@@ -50,7 +50,7 @@ const AboutMe = React.forwardRef((props, ref) => {
           className={isItalic ? "italic" : null}
           onMouseEnter={() => setIsItalic(true)}
           onMouseLeave={() => setIsItalic(false)}
-          onClick={() => navigate("/portfolio/art")}
+          onClick={() => navigate("/art")}
         >
           fine art painter and illustrator,
         </button>
