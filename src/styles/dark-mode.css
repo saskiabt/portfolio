@@ -81,6 +81,9 @@
 .dark-mode .MobileNav button button:hover {
   color: rgba(255, 255, 255, 0.831372549);
 }
+.dark-mode #sun-btn:hover {
+  color: rgb(253, 237, 130);
+}
 
 .Dark-Mode .App {
   background: #121212;

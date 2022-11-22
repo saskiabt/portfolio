@@ -2,7 +2,7 @@
 import { React, useRef, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header";
+import Nav from "./Components/Nav/Nav";
 import MobileNav from "./Components/Mobile-Nav/MobileNav";
 import { ModalContext } from "./context/modal-context";
 
@@ -33,10 +33,7 @@ function App() {
       className={isDarkMode ? "App dark-mode" : "App"}
       style={isDarkMode ? { backgroundColor: "#121212" } : null}
     >
-      <Header
-        scrollToProjects={scrollToProjects}
-        scrollToAbout={scrollToAbout}
-      />
+      <Nav scrollToProjects={scrollToProjects} scrollToAbout={scrollToAbout} />
       <MobileNav />
       {!isExpanded && (
         <Outlet context={{ projectsSectionRef, aboutSectionRef }} />

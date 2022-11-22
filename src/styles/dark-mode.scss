@@ -112,6 +112,12 @@ $offwhite: #ffffffd4;
       }
     }
   }
+
+  #sun-btn {
+    &:hover {
+      color: rgb(253, 237, 130);
+    }
+  }
 }
 
 .Dark-Mode .App {

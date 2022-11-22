@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
-import "../styles/dark-mode.css";
-import Button from "./Button";
-import "../styles/nav/nav.css";
-import { ModalContext } from "../context/modal-context";
+import "../../styles/dark-mode.css";
+import Button from "../Button";
+import "./nav.css";
+import { ModalContext } from "../../context/modal-context";
 
 function Header({ scrollToAbout }) {
   const { isDarkMode, setIsDarkMode } = useContext(ModalContext);

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React from "react";
-import "../styles/nav/nav.css";
+import "./Nav/nav.css";
 
 function Button(props) {
   return (

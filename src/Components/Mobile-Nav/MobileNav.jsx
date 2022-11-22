@@ -17,9 +17,19 @@ function MobileNav() {
       {!isExpanded ? (
         <div className="not-expanded" style={{ width: "100%" }}>
           <p>SB</p>
-          <button type="button" onClick={() => setIsExpanded(true)}>
-            <FontAwesomeIcon icon={faBars} />
+          <button
+            type="button"
+            className="navButton"
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            id={isDarkMode ? "sun-btn" : "moon-btn"}
+          >
+            <FontAwesomeIcon icon={!isDarkMode ? faMoon : faSun} />
           </button>
+          <div>
+            <button type="button" onClick={() => setIsExpanded(true)}>
+              <FontAwesomeIcon icon={faBars} />
+            </button>
+          </div>
         </div>
       ) : (
         <div className="dropdown">

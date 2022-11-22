@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import TypewriterComponent from "typewriter-effect";
 
 import "./AboutMe.css";
 
@@ -20,7 +21,16 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <div className="about-section" style={sectionPadding} ref={ref}>
       <h1 className="font-face-gm" id="greeting">
-        Hi, I&apos;m Saskia Binder{"   "}
+        <TypewriterComponent
+          options={{
+            strings: ["Hi, I'm Saskia Binder"],
+            autoStart: true,
+            loop: true,
+            delay: 150,
+            deleteSpeed: 150,
+            pauseFor: 1000000,
+          }}
+        />
       </h1>
       <p>
         I&apos;m a full stack web developer based in Brooklyn, NY. I am
