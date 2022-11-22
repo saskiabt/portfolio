@@ -22,7 +22,7 @@ function Header({ scrollToAbout }) {
   const handleAboutClick = () => {
     // eslint-disable-next-line no-unused-expressions
     if (location.pathname === "/portfolio/art") {
-      navigate("/portfolio");
+      navigate("/");
     } else {
       scrollToAbout();
     }
@@ -39,7 +39,7 @@ function Header({ scrollToAbout }) {
         <Button
           text="Artwork"
           onClick={() => {
-            navigate("/portfolio/art");
+            navigate("/art");
           }}
         />
         <button

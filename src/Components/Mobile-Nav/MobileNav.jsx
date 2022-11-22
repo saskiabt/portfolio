@@ -41,7 +41,7 @@ function MobileNav() {
             type="button"
             onClick={() => {
               setIsExpanded(false);
-              navigate("/portfolio");
+              navigate("/");
             }}
           >
             Coding
@@ -50,7 +50,7 @@ function MobileNav() {
             type="button"
             onClick={() => {
               setIsExpanded(false);
-              navigate("/portfolio/art");
+              navigate("/art");
             }}
           >
             ArtWork

@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/portfolio",
+        path: "/",
         element: <LandingPage />,
       },
       {
-        path: "/portfolio/art",
+        path: "/art",
         element: <Artpage />,
       },
     ],
