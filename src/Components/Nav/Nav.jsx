@@ -21,7 +21,7 @@ function Header({ scrollToAbout }) {
 
   const handleAboutClick = () => {
     // eslint-disable-next-line no-unused-expressions
-    if (location.pathname === "/portfolio/art") {
+    if (location.pathname === "/art") {
       navigate("/");
     } else {
       scrollToAbout();
