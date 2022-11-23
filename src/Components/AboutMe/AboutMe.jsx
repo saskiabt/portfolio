@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import TypewriterComponent from "typewriter-effect";
-
+import { Typewriter } from "react-simple-typewriter";
 import "./AboutMe.css";
 
 const AboutMe = React.forwardRef((props, ref) => {
@@ -21,15 +20,12 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <div className="about-section" style={sectionPadding} ref={ref}>
       <h1 className="font-face-gm" id="greeting">
-        <TypewriterComponent
-          options={{
-            strings: ["Hi, I'm Saskia Binder "],
-            autoStart: true,
-            loop: true,
-            delay: 150,
-            deleteSpeed: 150,
-            pauseFor: 1000000,
-          }}
+        <Typewriter
+          words={["Hi, I'm Saskia Binder"]}
+          loop={1}
+          cursor={false}
+          cursorBlinking={false}
+          typeSpeed={120}
         />
       </h1>
       <p>
