@@ -75,17 +75,17 @@ p {
   width: 75%;
   cursor: pointer;
   border-width: 0.1px;
-  background-color: #656cbf;
-  color: white;
+  background-color: white;
+  color: #2c3163;
   border-radius: 50%;
   font-size: medium;
   box-shadow: inset 0px 1px 0px 5px #2d398585;
 
   &:hover {
-    color: #2c3163;
+    color: white;
     font-size: 1.2em;
     border: 0.5px solid #959fdfd8;
-    background: #fff;
+    background: #2c3163;
     box-shadow: inset 0px 1px 0px 5px #a8b1efbb;
   }
 }
