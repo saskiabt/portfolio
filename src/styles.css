@@ -83,17 +83,17 @@ p {
   width: 75%;
   cursor: pointer;
   border-width: 0.1px;
-  color: #2c3163;
-  background-color: rgb(202, 212, 255);
+  background-color: #656cbf;
+  color: white;
   border-radius: 50%;
   font-size: medium;
   box-shadow: inset 0px 1px 0px 5px rgba(45, 57, 133, 0.5215686275);
 }
 .card-button:hover {
-  color: white;
+  color: #2c3163;
   font-size: 1.2em;
   border: 0.5px solid rgba(149, 159, 223, 0.8470588235);
-  background: #40437f;
+  background: #fff;
   box-shadow: inset 0px 1px 0px 5px rgba(168, 177, 239, 0.7333333333);
 }
 
