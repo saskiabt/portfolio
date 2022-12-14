@@ -1,3 +1,67 @@
+.about-section {
+  position: absolute;
+}
 .about-section p {
   padding-bottom: 6px;
+  padding: 5px 0;
+}
+
+.slide-in {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100vh;
+  -webkit-animation: slide-in 2.8s;
+          animation: slide-in 2.8s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: ease-in-out;
+}
+
+.about-link {
+  -webkit-animation: to-purple 1s;
+          animation: to-purple 1s;
+  transition: ease-in;
+}
+
+@-webkit-keyframes to-purple {
+  0% {
+    color: black;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+@keyframes to-purple {
+  0% {
+    color: black;
+  }
+  100% {
+    color: purple;
+  }
+}
+@-webkit-keyframes slide-in {
+  0% {
+    top: 100vh;
+  }
+  70% {
+    top: 0vh;
+  }
+  100% {
+    top: 2.5vh;
+  }
+}
+@keyframes slide-in {
+  0% {
+    top: 100vh;
+  }
+  70% {
+    top: 0vh;
+  }
+  100% {
+    top: 2.5vh;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

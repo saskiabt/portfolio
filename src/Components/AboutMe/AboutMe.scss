@@ -1,5 +1,47 @@
 .about-section {
+  position: absolute;
   p {
     padding-bottom: 6px;
+    padding: 5px 0;
+  }
+}
+
+.slide-in {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100vh;
+  animation: slide-in 2.8s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  transition: ease-in-out;
+}
+
+.about-link {
+  animation: to-purple 1s;
+  transition: ease-in;
+}
+
+@keyframes to-purple {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: purple;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: 100vh;
+  }
+
+  70% {
+    top: 0vh;
+  }
+
+  100% {
+    top: 2.5vh;
   }
 }

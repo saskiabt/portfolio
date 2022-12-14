@@ -14,22 +14,16 @@ import Button from "../Button";
 import "./nav.css";
 import { GlobalContext } from "../../context/modal-context";
 
-function Header({ scrollToAbout }) {
+function Header() {
   const { isDarkMode, setIsDarkMode } = useContext(GlobalContext);
 
-  const location = useLocation();
   const navigate = useNavigate();
   const goToLink = (URL) => {
     window.open(URL, "_blank");
   };
 
   const handleAboutClick = () => {
-    // eslint-disable-next-line no-unused-expressions
-    if (location.pathname === "/art") {
-      navigate("/");
-    } else {
-      scrollToAbout();
-    }
+    navigate("/");
   };
 
   return (
@@ -39,7 +33,9 @@ function Header({ scrollToAbout }) {
       </button>
 
       <div className="button-wrapper">
-        <Button text="Coding" onClick={handleAboutClick} />
+        <Button text="About" onClick={() => navigate("/")} />
+
+        <Button text="Coding" onClick={() => navigate("/coding")} />
         <Button
           text="Artwork"
           onClick={() => {

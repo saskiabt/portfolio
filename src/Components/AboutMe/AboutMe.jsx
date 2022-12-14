@@ -28,35 +28,38 @@ const AboutMe = React.forwardRef((props, ref) => {
           typeSpeed={120}
         />
       </h1>
-      <p>
-        I&apos;m a full stack web developer based in Brooklyn, NY. I am
-        proficient in React, Redux, JavaScript, TypeScript, NodeJS, CSS/SCSS,
-        HTML, Express, MongoDB, Git, and Adobe Creative Suite. I enjoy building
-        engaging, responsive websites and applications that reflect my interests
-        in art and design.
-        <br />
-        See my programming projects below!
-      </p>
-      <p>
-        I&apos;m also a
-        <button
-          type="button"
-          style={buttonStyle}
-          id="about-link"
-          className={isItalic ? "italic" : null}
-          onMouseEnter={() => setIsItalic(true)}
-          onMouseLeave={() => setIsItalic(false)}
-          onClick={() => navigate("/art")}
-        >
-          fine art painter and illustrator,
-        </button>
-        and I am experienced in Photoshop, Illustrator, and Figma for UI and
-        design.
-      </p>
-      <p>
-        This site was built in React with TypeScript & React Context. Fonts
-        courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type Foundry.
-      </p>
+      <div className="slide-in">
+        <p>
+          I`m a full stack web developer based in Brooklyn, NY
+          <p>
+            I am proficient in React / Redux, JavaScript, TypeScript, Python,
+            NodeJS, SQL, MongoDB,CSS/SCSS,HTML, Express, Git, and Adobe Creative
+            Suite. I am also skilled in Photoshop, Illustrator, and Figma.I
+            enjoy building engaging, responsive websites and applications that
+            reflect my interests in art and design.
+          </p>
+        </p>
+        <p>
+          I&apos;m also a painter, illustrator, and fanatic about color theory.
+          Check out my artwork
+          <button
+            type="button"
+            style={buttonStyle}
+            id="about-link"
+            className={isItalic ? "italic" : null}
+            onMouseEnter={() => setIsItalic(true)}
+            onMouseLeave={() => setIsItalic(false)}
+            onClick={() => navigate("/art")}
+          >
+            here!
+          </button>
+        </p>
+        <p>
+          This site was built in React with TypeScript & React Context. Fonts
+          courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type
+          Foundry.
+        </p>
+      </div>
     </div>
   );
 });

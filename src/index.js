@@ -9,6 +9,7 @@ import "./fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf";
 import Artpage from "./Components/Art-page/Artpage";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import { ModalProvider } from "./context/modal-context";
+import Projects from "./Components/Projects/Projects";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/art",
         element: <Artpage />,
+      },
+      {
+        path: "/coding",
+        element: <Projects />,
       },
     ],
   },

@@ -13,7 +13,9 @@ import "./Projects.css";
 const Projects = React.forwardRef((props, ref) => {
   return (
     <div className="Projects" ref={ref}>
-      <h2 className="font-face-gm">Projects</h2>
+      <h2 className="font-face-gm" style={{ marginTop: "40px" }}>
+        Coding Projects
+      </h2>
       <div className="cards">
         <Card
           className="mmb"
