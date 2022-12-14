@@ -42,17 +42,20 @@
 }
 
 @media only screen and(min-width: 900px) {
-  .slide-in {
-    p {
-      font-size: 1em;
-    }
-  }
 }
 
 @media only screen and(max-width: 900px) {
   #greeting {
     span {
       font-size: 3.815rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .slide-in {
+    p {
+      font-size: 0.8em;
     }
   }
 }
