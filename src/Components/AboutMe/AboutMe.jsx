@@ -9,16 +9,12 @@ const AboutMe = React.forwardRef((props, ref) => {
 
   const [isItalic, setIsItalic] = useState(false);
 
-  const sectionPadding = {
-    padding: "1em",
-  };
-
   const buttonStyle = {
     background: "none",
     border: "0px",
   };
   return (
-    <div className="about-section" style={sectionPadding} ref={ref}>
+    <div className="about-section" ref={ref}>
       <h1 id="greeting">
         <Typewriter
           words={["Hi, I'm Saskia Binder"]}
