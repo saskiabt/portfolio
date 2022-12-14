@@ -1,9 +1,6 @@
 .about-section {
   position: absolute;
-}
-.about-section p {
-  padding-bottom: 6px;
-  padding: 5px 0;
+  font-size: 16px;
 }
 
 .slide-in {
@@ -18,8 +15,45 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   transition: ease-in-out;
+  gap: 10px;
+}
+.slide-in :first-child {
+  padding-bottom: 1%;
+  margin: 0 20px;
+}
+.slide-in p {
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  font-size: 0.8rem;
 }
 
+.float {
+  z-index: -1;
+  height: 100%;
+  width: 100vw;
+  background-color: lightblue;
+}
+
+#greeting {
+  font-family: "Victorianna";
+  color: #3c00ff;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+}
+#greeting span {
+  font-size: 4.768rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .slide-in p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #greeting span {
+    font-size: 3.815rem;
+  }
+}
 .about-link {
   -webkit-animation: to-purple 1s;
           animation: to-purple 1s;
@@ -46,22 +80,34 @@
 @-webkit-keyframes slide-in {
   0% {
     top: 100vh;
+    opacity: 0%;
   }
   70% {
     top: 0vh;
+    opacity: 50%;
   }
   100% {
     top: 2.5vh;
+    opacity: 100%;
+    border: 1px solid blue;
+    padding: 40px 20px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
   }
 }
 @keyframes slide-in {
   0% {
     top: 100vh;
+    opacity: 0%;
   }
   70% {
     top: 0vh;
+    opacity: 50%;
   }
   100% {
     top: 2.5vh;
+    opacity: 100%;
+    border: 1px solid blue;
+    padding: 40px 20px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
   }
 }/*# sourceMappingURL=AboutMe.css.map */

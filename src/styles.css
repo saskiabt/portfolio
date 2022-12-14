@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
@@ -34,8 +35,8 @@ button {
   font-family: "Victorianna";
   font-size: 3em;
   color: #3c00ff;
-  -webkit-margin-after: 0.2em;
-          margin-block-end: 0.2em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
 }
 
 p {
@@ -95,12 +96,6 @@ p {
   border: 0.5px solid rgba(149, 159, 223, 0.8470588235);
   background: #2c3163;
   box-shadow: inset 0px 1px 0px 5px rgba(168, 177, 239, 0.7333333333);
-}
-
-#greeting {
-  margin-top: 2.5%;
-  font-size: 5em;
-  font-weight: 700;
 }
 
 .italic {

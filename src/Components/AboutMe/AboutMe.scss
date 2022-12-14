@@ -1,9 +1,6 @@
 .about-section {
   position: absolute;
-  p {
-    padding-bottom: 6px;
-    padding: 5px 0;
-  }
+  font-size: 16px;
 }
 
 .slide-in {
@@ -15,6 +12,49 @@
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
   transition: ease-in-out;
+  gap: 10px;
+  :first-child {
+    padding-bottom: 1%;
+    margin: 0 20px;
+  }
+
+  p {
+    margin-block-end: 0px;
+    font-size: 0.8rem;
+  }
+}
+
+.float {
+  z-index: -1;
+  height: 100%;
+  width: 100vw;
+  background-color: lightblue;
+}
+
+#greeting {
+  font-family: "Victorianna";
+  color: #3c00ff;
+  margin-block-end: 1em;
+
+  span {
+    font-size: 4.768rem;
+  }
+}
+
+@media only screen and(min-width: 900px) {
+  .slide-in {
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and(max-width: 900px) {
+  #greeting {
+    span {
+      font-size: 3.815rem;
+    }
+  }
 }
 
 .about-link {
@@ -35,13 +75,23 @@
 @keyframes slide-in {
   0% {
     top: 100vh;
+    opacity: 0%;
   }
 
   70% {
     top: 0vh;
+    opacity: 50%;
   }
 
   100% {
     top: 2.5vh;
+    opacity: 100%;
+    border: 1px solid blue;
+    padding: 40px 20px;
+    box-shadow: blue 0px 0px 0px 2px inset,
+      rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+      rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+      rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+      rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; // border-radius: 2.5% 10% 2.5% 10%;
   }
 }

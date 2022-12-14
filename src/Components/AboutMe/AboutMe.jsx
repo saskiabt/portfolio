@@ -19,26 +19,26 @@ const AboutMe = React.forwardRef((props, ref) => {
   };
   return (
     <div className="about-section" style={sectionPadding} ref={ref}>
-      <h1 className="font-face-gm" id="greeting">
+      <h1 id="greeting">
         <Typewriter
           words={["Hi, I'm Saskia Binder"]}
           loop={1}
           cursor={false}
           cursorBlinking={false}
           typeSpeed={120}
+          className="greeting"
         />
       </h1>
       <div className="slide-in">
+        <p>I`m a full stack web developer and artist based in Brooklyn, NY.</p>
         <p>
-          I`m a full stack web developer based in Brooklyn, NY
-          <p>
-            I am proficient in React / Redux, JavaScript, TypeScript, Python,
-            NodeJS, SQL, MongoDB,CSS/SCSS,HTML, Express, Git, and Adobe Creative
-            Suite. I am also skilled in Photoshop, Illustrator, and Figma.I
-            enjoy building engaging, responsive websites and applications that
-            reflect my interests in art and design.
-          </p>
+          I am proficient in React / Redux, JavaScript, TypeScript, Python,
+          NodeJS, SQL, MongoDB,CSS/SCSS,HTML, Express, Git, and Adobe Creative
+          Suite. I am also skilled in Photoshop, Illustrator, and Figma, and I
+          enjoy building engaging, responsive websites and applications that
+          reflect my interests in art and design.
         </p>
+
         <p>
           I&apos;m also a painter, illustrator, and fanatic about color theory.
           Check out my artwork
@@ -55,11 +55,13 @@ const AboutMe = React.forwardRef((props, ref) => {
           </button>
         </p>
         <p>
-          This site was built in React with TypeScript & React Context. Fonts
-          courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type
+          This site was built in React with TypeScript.
+          <br />
+          Fonts courtesy of Sébastien Hayez and Jérémy Landes of Velvetyne Type
           Foundry.
         </p>
       </div>
+      {/* <div className="float" /> */}
     </div>
   );
 });
