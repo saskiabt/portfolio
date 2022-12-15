@@ -102,7 +102,7 @@
     border: 1px solid blue;
     padding: 40px 20px;
     border: 1px solid #3434a5;
-    box-shadow: inset 0 0 0 2px #3434a4, 10px -10px 0 -3px #121212, 10px -10px #40803e, 20px -20px 0 -3px #121212, 20px -20px #c0ab41, 30px -30px 0 -3px #121212, 30px -30px #b77c51, 40px -40px 0 -3px #121212, 40px -40px #b84444;
+    box-shadow: inset 0 0 0 2px #3434a4, 0px -10px 0 -3px #121212, 0px -10px #40803e, 0px -20px 0 -3px #121212, 0px -20px #c0ab41, 0px -30px 0 -3px #121212, 0px -30px #b77c51, 0px -40px 0 -3px #121212, 0px -40px #b84444;
   }
 }
 @keyframes slide-in-dark {
@@ -120,7 +120,7 @@
     border: 1px solid blue;
     padding: 40px 20px;
     border: 1px solid #3434a5;
-    box-shadow: inset 0 0 0 2px #3434a4, 10px -10px 0 -3px #121212, 10px -10px #40803e, 20px -20px 0 -3px #121212, 20px -20px #c0ab41, 30px -30px 0 -3px #121212, 30px -30px #b77c51, 40px -40px 0 -3px #121212, 40px -40px #b84444;
+    box-shadow: inset 0 0 0 2px #3434a4, 0px -10px 0 -3px #121212, 0px -10px #40803e, 0px -20px 0 -3px #121212, 0px -20px #c0ab41, 0px -30px 0 -3px #121212, 0px -30px #b77c51, 0px -40px 0 -3px #121212, 0px -40px #b84444;
   }
 }
 .dark-mode .slide-in {
