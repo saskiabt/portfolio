@@ -10,8 +10,8 @@
   top: 100vh;
   -webkit-animation: slide-in 2.8s;
           animation: slide-in 2.8s;
-  -webkit-animation-delay: 2.1s;
-          animation-delay: 2.1s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   transition: ease-in-out;
@@ -37,11 +37,13 @@
 #greeting {
   font-family: "Victorianna";
   color: #3c00ff;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
 }
 #greeting span {
-  font-size: 4.768rem;
+  font-size: 3.815rem;
 }
 
 @media only screen and (max-width: 900px) {

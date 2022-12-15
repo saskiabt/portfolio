@@ -9,7 +9,7 @@
   position: relative;
   top: 100vh;
   animation: slide-in 2.8s;
-  animation-delay: 2.1s;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
   transition: ease-in-out;
   gap: 10px;
@@ -34,10 +34,11 @@
 #greeting {
   font-family: "Victorianna";
   color: #3c00ff;
-  margin-block-end: 1em;
+  margin-block-end: 2em;
+  margin-block-start: 1em;
 
   span {
-    font-size: 4.768rem;
+    font-size: 3.815rem;
   }
 }
 
