@@ -45,7 +45,7 @@ function MobileNav() {
             type="button"
             onClick={() => {
               setIsExpanded(false);
-              navigate("/");
+              navigate("/coding");
             }}
           >
             Coding
