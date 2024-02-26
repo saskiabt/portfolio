@@ -31,12 +31,16 @@ button {
   font-family: "Victorianna";
   src: local("Victorianna"), url("../src/fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf") format("truetype");
 }
+@font-face {
+  font-family: "CirrusCumulus";
+  src: local("CirrusCumulus");
+  src: url("../src/fonts/CirrusCumulus/CirrusCumulus.ttf");
+}
 .font-face-gm {
   font-family: "Victorianna";
   font-size: 3em;
   color: #3c00ff;
-  -webkit-margin-after: 0em;
-          margin-block-end: 0em;
+  margin-block-end: 0em;
 }
 
 p {
@@ -46,19 +50,9 @@ p {
 }
 
 .rotate {
-  -webkit-animation: rotating 3s infinite linear;
-          animation: rotating 3s infinite linear;
+  animation: rotating 3s infinite linear;
   color: blue;
   font-size: larger;
-}
-
-@-webkit-keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: transform(359deg);
-  }
 }
 
 @keyframes rotating {
@@ -186,12 +180,10 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -203,29 +195,12 @@ body,
   height: 100%;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
   }
 }
 @keyframes typing {

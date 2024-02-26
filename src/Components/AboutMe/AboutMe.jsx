@@ -17,7 +17,7 @@ const AboutMe = React.forwardRef((props, ref) => {
     <div className="about-section" ref={ref}>
       <h1 id="greeting">
         <Typewriter
-          words={["Hi, I'm Saskia Binder"]}
+          words={["Saskia Binder"]}
           loop={1}
           cursor={false}
           cursorBlinking={false}

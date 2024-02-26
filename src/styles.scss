@@ -33,6 +33,11 @@ button {
       format("truetype");
 }
 
+@font-face {
+  font-family: "CirrusCumulus";
+  src: local("CirrusCumulus");
+  src: url("../src/fonts/CirrusCumulus/CirrusCumulus.ttf");
+}
 .font-face-gm {
   font-family: "Victorianna";
   font-size: 3em;

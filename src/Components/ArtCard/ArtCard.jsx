@@ -10,20 +10,6 @@ function ArtCard({ artwork }) {
   const [activeIMG, setActiveIMG] = useState(image);
   const { modal, setModal } = useContext(GlobalContext);
 
-  // const showModal = () => {
-  //   setModal({
-  //     ...modal,
-  //     isShowing: true,
-  //     image,
-  //     altIMG,
-  //     title,
-  //     length,
-  //     width,
-  //     year,
-  //     material,
-  //   });
-  // };
-
   return (
     <div className="ArtCard">
       <button

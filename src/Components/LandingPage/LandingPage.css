@@ -1,13 +1,84 @@
 .LandingPage {
-  padding-top: 3.5%;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+}
+.LandingPage button {
+  border: 0;
+  padding: 0;
+  opacity: 100%;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+.LandingPage button::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolsute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.LandingPage button:hover {
+  opacity: 40%;
+}
+.LandingPage button img {
+  border: none;
+  padding-inline: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 70vh;
+  padding: 0;
+  border: 0;
+}
+.LandingPage button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 1.3s ease;
+}
+.LandingPage button span .button-with-image:hover {
+  opacity: 1;
+  font-weight: 400;
 }
 
-@media only screen and (max-width: 450px) {
-  #greeting {
-    font-size: 2.8em;
-    font-weight: 900;
-  }
+.button-with-image:hover span {
+  opacity: 1;
+}
+
+.header-row,
+.footer-row {
+  width: 100%;
+}
+
+.content-row {
+  max-height: calc(100vh - 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+h1 {
+  padding: 2vh;
+  font-family: "CirrusCumulus";
+  font-size: 2rem;
+  margin: 0;
+  height: 20%;
 }/*# sourceMappingURL=LandingPage.css.map */

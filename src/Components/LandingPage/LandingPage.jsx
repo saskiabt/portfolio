@@ -1,13 +1,34 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
-import AboutMe from "../AboutMe/AboutMe";
+import { useState } from "react";
 import "./LandingPage.css";
+import artworks from "../Art-page/artworks";
 
 function LandingPage() {
   const { aboutSectionRef } = useOutletContext();
+  const [isHover, setHovered] = useState(false);
+
+  const handleMouseOver = () => {
+    setHovered(true);
+  };
+  const handleMouseOut = () => {
+    setHovered(false);
+  };
+
   return (
     <div className="LandingPage">
-      <AboutMe ref={aboutSectionRef} />
+      <h1 className="header-row">Saskia Binder</h1>
+      <div className="content-row">
+        <button
+          className={`button-with-image ${isHover ? "hovered" : ""}`}
+          onMouseEnter={handleMouseOver}
+          onMouseLeave={handleMouseOut}
+        >
+          <img src={artworks.flowers.image}></img>
+          {isHover && <span>Enter</span>}
+        </button>
+      </div>
+      <h1 className="footer-row rotated">Saskia Binder</h1>
     </div>
   );
 }
