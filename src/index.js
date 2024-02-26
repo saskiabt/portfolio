@@ -10,6 +10,7 @@ import Artpage from "./Components/Art-page/Artpage";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import { ModalProvider } from "./context/modal-context";
 import Projects from "./Components/Projects/Projects";
+import AboutMe2 from "./Components/AboutMe2/AboutMe2";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <LandingPage />,
+      },
+      {
+        path: "/aboutMe",
+        element: <AboutMe2/>
       },
       {
         path: "/art",

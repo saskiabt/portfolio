@@ -60,7 +60,10 @@
 
 .header-row,
 .footer-row {
+  display: flex;
   width: 100%;
+  align-items: flex-start;
+  padding: 0.5rem;
 }
 
 .content-row {
@@ -76,9 +79,11 @@
 }
 
 h1 {
-  padding: 2vh;
   font-family: "CirrusCumulus";
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
   height: 20%;
+  color: rgb(226, 23, 68);
+  margin: 0;
+  padding: 1rem 4rem;
 }/*# sourceMappingURL=LandingPage.css.map */
