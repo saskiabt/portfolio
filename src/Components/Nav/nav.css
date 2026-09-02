@@ -22,20 +22,13 @@
 }
 
 .home-button {
-  font-family: "Victorianna";
-  font-size: 3em;
+  font-family: "roboto-mono", monospace;
+  font-size: 1.3rem;
+  white-space: nowrap;
   border: 0px;
   color: #3c00ff;
   cursor: pointer;
-  bottom: -22px;
-  position: relative;
   background: none;
-}
-@media screen and (min-width: 800px) {
-  .home-button {
-    font-size: 3.3em;
-    padding-right: 0px;
-  }
 }
 
 .button-wrapper .navButton {
