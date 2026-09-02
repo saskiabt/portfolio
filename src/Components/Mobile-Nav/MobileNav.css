@@ -53,13 +53,16 @@
   justify-content: flex-start;
   width: 100%;
   flex-grow: 2;
-  font-size: 1.8em;
+  font-size: 1.3em;
   text-align: left;
   padding-left: 5%;
+  white-space: nowrap;
 }
 .not-expanded div {
   display: flex;
   flex-direction: row;
   gap: 5%;
   padding-right: 10px;
-}/*# sourceMappingURL=MobileNav.css.map */
+}
+
+/*# sourceMappingURL=MobileNav.css.map */

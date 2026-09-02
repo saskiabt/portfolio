@@ -3,11 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX, faSun } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
-import {
-  faLinkedin,
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import "./MobileNav.css";
 import { GlobalContext } from "../../context/modal-context";
 import openLink from "../openLink";
@@ -20,7 +15,7 @@ function MobileNav() {
     <div className="MobileNav">
       {!isExpanded ? (
         <div className="not-expanded" style={{ width: "100%" }}>
-          <p>SB</p>
+          <p>Saskia Binder</p>
           <button
             type="button"
             className="navButton"
@@ -45,15 +40,6 @@ function MobileNav() {
             type="button"
             onClick={() => {
               setIsExpanded(false);
-              navigate("/coding");
-            }}
-          >
-            Coding
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setIsExpanded(false);
               navigate("/art");
             }}
           >
@@ -61,9 +47,18 @@ function MobileNav() {
           </button>
           <button
             type="button"
+            onClick={() => {
+              setIsExpanded(false);
+              navigate("/coding");
+            }}
+          >
+            Coding
+          </button>
+          <button
+            type="button"
             onClick={() => openLink("https://github.com/saskiabt")}
           >
-            <FontAwesomeIcon icon={faGithub} />
+            Github
           </button>
           <button
             type="button"
@@ -71,21 +66,21 @@ function MobileNav() {
               openLink("https://www.linkedin.com/in/saskia-binder/")
             }
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            LinkedIn
           </button>
           <button
             type="button"
             className="navButton"
             onClick={() => openLink("https://www.instagram.com/saskiamair/")}
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            Instagram
           </button>
           <button
             type="button"
             className="navButton"
             onClick={() => setIsDarkMode(!isDarkMode)}
           >
-            <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} />
+            {isDarkMode ? "Light Mode" : "Dark Mode"}
           </button>
         </div>
       )}
