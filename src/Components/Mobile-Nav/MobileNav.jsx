@@ -43,7 +43,14 @@ function MobileNav() {
               navigate("/art");
             }}
           >
-            ArtWork
+            Artwork
+          </button>
+          <button
+            type="button"
+            className="navButton"
+            onClick={() => openLink("https://www.instagram.com/saskiamair/")}
+          >
+            Instagram
           </button>
           <button
             type="button"
@@ -67,13 +74,6 @@ function MobileNav() {
             }
           >
             LinkedIn
-          </button>
-          <button
-            type="button"
-            className="navButton"
-            onClick={() => openLink("https://www.instagram.com/saskiamair/")}
-          >
-            Instagram
           </button>
           <button
             type="button"
