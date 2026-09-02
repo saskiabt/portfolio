@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
@@ -13,6 +13,7 @@ function Header() {
   const { isDarkMode, setIsDarkMode } = useContext(GlobalContext);
 
   const navigate = useNavigate();
+  const location = useLocation();
   const goToLink = (URL) => {
     window.open(URL, "_blank");
   };
@@ -23,11 +24,35 @@ function Header() {
 
   return (
     <div className={isDarkMode ? "header dark-mode" : "header"}>
-      <button className="home-button " type="button" onClick={handleAboutClick}>
-        Saskia Binder
-      </button>
+      {location.pathname !== "/" && (
+        <button
+          className="home-button "
+          type="button"
+          onClick={handleAboutClick}
+        >
+          Saskia Binder
+        </button>
+      )}
 
       <div className="button-wrapper">
+        {location.pathname === "/" && (
+          <button
+            type="button"
+            className="navButton"
+            onClick={() => navigate("/art")}
+          >
+            Artwork
+          </button>
+        )}
+        {location.pathname === "/art" && (
+          <button
+            type="button"
+            className="navButton"
+            onClick={() => navigate("/")}
+          >
+            About Me
+          </button>
+        )}
         <button
           type="button"
           className="navButton"
