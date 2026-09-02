@@ -6,7 +6,17 @@ import "./ArtCard.css";
 import { GlobalContext } from "../../context/modal-context";
 
 function ArtCard({ artwork }) {
-  const { image, altIMG, title, length, width, year, material } = artwork;
+  const {
+    image,
+    thumb,
+    altIMG,
+    altThumb,
+    title,
+    length,
+    width,
+    year,
+    material,
+  } = artwork;
   const [activeIMG, setActiveIMG] = useState(image);
   const { modal, setModal } = useContext(GlobalContext);
 
@@ -48,6 +58,8 @@ function ArtCard({ artwork }) {
           className="active-img"
           src={activeIMG}
           alt="colorful painting of flowers by Saskia Binder"
+          loading="lazy"
+          decoding="async"
         />
       </button>
       {altIMG.length > 0 && (
@@ -65,7 +77,12 @@ function ArtCard({ artwork }) {
               setActiveIMG(image);
             }}
           >
-            <img src={image} alt="thumbnail button" />
+            <img
+              src={thumb}
+              alt="thumbnail button"
+              loading="lazy"
+              decoding="async"
+            />
           </button>
           {altIMG.map((btnImage, i) => {
             return (
@@ -83,7 +100,12 @@ function ArtCard({ artwork }) {
                   setActiveIMG(altIMG[i]);
                 }}
               >
-                <img src={btnImage} alt="thumbnail button" />
+                <img
+                  src={altThumb[i]}
+                  alt="thumbnail button"
+                  loading="lazy"
+                  decoding="async"
+                />
               </button>
             );
           })}
