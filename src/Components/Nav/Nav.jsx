@@ -2,15 +2,10 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/dark-mode.css";
-import Button from "../Button";
 import "./nav.css";
 import { GlobalContext } from "../../context/modal-context";
 
@@ -29,33 +24,10 @@ function Header() {
   return (
     <div className={isDarkMode ? "header dark-mode" : "header"}>
       <button className="home-button " type="button" onClick={handleAboutClick}>
-        SB
+        Saskia Binder
       </button>
 
       <div className="button-wrapper">
-        <Button text="About" onClick={() => navigate("/")} />
-
-        <Button text="Coding" onClick={() => navigate("/coding")} />
-        <Button
-          text="Artwork"
-          onClick={() => {
-            navigate("/art");
-          }}
-        />
-        <button
-          type="button"
-          className="navButton"
-          onClick={() => goToLink("https://www.linkedin.com/in/saskia-binder/")}
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-        </button>
-        <button
-          type="button"
-          className="navButton"
-          onClick={() => goToLink("https://github.com/saskiabt")}
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </button>
         <button
           type="button"
           className="navButton"

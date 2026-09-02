@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import { React, useRef, useContext } from "react";
+import React, { useRef, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Nav from "./Components/Nav/Nav";
