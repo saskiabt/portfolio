@@ -8,7 +8,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    font-size: 1.7em;
+    font-size: clamp(0.7em, 4.2vh, 1.7em);
     background-color: white;
     border: 0;
     border-bottom: 1px solid black;
