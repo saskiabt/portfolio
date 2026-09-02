@@ -15,7 +15,7 @@ function MobileNav() {
     <div className="MobileNav">
       {!isExpanded ? (
         <div className="not-expanded" style={{ width: "100%" }}>
-          <p>SB</p>
+          <p>Saskia Binder</p>
           <button
             type="button"
             className="navButton"
